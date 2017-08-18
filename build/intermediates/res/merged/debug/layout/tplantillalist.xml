@@ -18,42 +18,61 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:orientation="horizontal"
-            android:visibility="gone"
             android:weightSum="1"
             android:gravity="center">
+
             <Spinner
                 android:id="@+id/spin_userdoc"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:layout_height="wrap_content"
                 android:prompt="@+id/situacioCap" />
 
-            <Button
-                android:id="@+id/tplant_dec_data"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_chevron_left_black_24dp"
-                android:visibility="visible" />
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tplant_data"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="01/12/2016"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:selectAllOnFocus="true"
-                android:visibility="visible"
-                android:gravity="center_vertical" />
+                <Button
+                    android:id="@+id/tplant_dec_data"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:background="@drawable/minus"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    android:gravity="center_vertical"/>
 
-            <Button
-                android:id="@+id/tplant_inc_data"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_chevron_right_black_24dp"
-                android:visibility="visible"
-                android:gravity="right|center_vertical|center_horizontal" />
+                <TextView
+                    android:id="@+id/tplant_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="01/12/2016"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:selectAllOnFocus="true"
+                    android:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical" />
 
+                <Button
+                    android:id="@+id/tplant_inc_data"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:padding="5dp"
+                    android:background="@drawable/plus"
+                    android:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical" />
+
+
+            </LinearLayout>
 
 
         </LinearLayout>
