@@ -19,6 +19,7 @@
             android:focusableInTouchMode="true"
             android:orientation="horizontal"
             android:weightSum="1"
+            android:visibility="gone"
             android:gravity="center">
 
             <Spinner
@@ -27,6 +28,7 @@
                 android:gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
+                android:padding="5dp"
                 android:layout_height="wrap_content"
                 android:prompt="@+id/situacioCap" />
 
@@ -34,7 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.5"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="right"
                 android:gravity="center_vertical"
                 android:layout_margin="5dp"
                 android:orientation="horizontal">
