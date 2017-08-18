@@ -161,7 +161,7 @@ public class MapTables {
 					// Separem primer per si hi ha opcions <UPDATE>
 					String op[] = linea.split("\\<");
 					String st[] = op[0].split("=");
-					String c1 = st[0];
+					String c1 = st[0].trim();
 					if (c1.substring(0, 1).equals("[")) {
 						if (c1.indexOf("OPTIONS") > 0) {
 							if (c1.indexOf("(NOHEADERS)") > 0)
@@ -169,13 +169,14 @@ public class MapTables {
 							if (c1.indexOf("(HEADERS)") > 0)
 								headers=true;
 						} else {
-							String c2 = st[1];
+							String c2 = st[1].trim();
 							taules.add(act = new Taules(c1.substring(1), c2
 									.substring(0, c2.length() - 1)));
 							act.setHeaders(headers);
 							if (op.length > 1) { // [SaldoClientes.txt=GRUPCLI]<UPDATE(grupcli>
-								String opcions = op[1].substring(0,
-										op[1].length() - 1);
+								String cmd = op[1].trim();
+								String opcions = cmd.substring(0,
+										cmd.length() - 1);
 								String key = "";
 								String opkey[] = opcions.split("\\(");
 								if (opkey.length > 1) {

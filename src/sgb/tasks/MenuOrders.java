@@ -86,6 +86,7 @@ public class MenuOrders extends Activity implements OnClickListener {
 														// progresbar de la
 														// caption
 		setContentView(R.layout.mainlogo);
+		Utilitats.setCurrentUser(this,Utilitats.getTerminalUser(this));
 
 		Intent it = new Intent(MenuOrders.this, ExecTask.class);
 		startActivity(it);

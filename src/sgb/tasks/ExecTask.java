@@ -30,6 +30,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -55,6 +56,7 @@ public class ExecTask extends Activity {
 	private String programa = "";
 	private String parametre1 = "";
 	private String parametre2 = "";
+	private String tipus = "";
 	private OrdersHelper helper;
 	private static String grupcli;
 	private static String client;
@@ -96,6 +98,9 @@ public class ExecTask extends Activity {
 		NavItms.add(new Item_objct(titulos[1], NavIcons.getResourceId(0, -1)));
 		NavItms.add(new Item_objct(titulos[2], NavIcons.getResourceId(0+2, -1)));
 		NavItms.add(new Item_objct(titulos[3], NavIcons.getResourceId(0+3, -1)));
+		NavItms.add(new Item_objct(titulos[4], NavIcons.getResourceId(0+4, -1)));
+		NavItms.add(new Item_objct(titulos[5], NavIcons.getResourceId(0+5, -1)));
+		NavItms.add(new Item_objct(titulos[6], NavIcons.getResourceId(0+6, -1)));
 		// Eventos
 		/*
 		 * NavItms.add(new Item_objct(titulos[2], NavIcons.getResourceId(2,
@@ -152,48 +157,8 @@ public class ExecTask extends Activity {
 		// check selected menu item
 		switch (item.getItemId()) {
 			case R.id.copydb:
-				String Sd1 = Environment.getExternalStorageState();
-				String Sd2 = Environment.MEDIA_MOUNTED;
-				if (!Environment.MEDIA_MOUNTED.equals(Sd1)) {
-					Toast.makeText(getApplicationContext(),
-							"External SD card not mounted", Toast.LENGTH_LONG)
-							.show();
-				}
-
-				File sd = Utilitats.getWorkFolder(this, Utilitats.BACKUP);
-				if (sd == null)
-					return false;
-				if (!sd.exists())
-					sd.mkdirs();
-				File data = Environment.getDataDirectory();
-
-				try {
-					helper.close();
-					String currentDBPath = "/data/sgb.orders/databases/andorders.db";
-					String backupDBPath = "orders.db";
-					File currentDB = new File(data, currentDBPath);
-					File backupDB = new File(sd, backupDBPath);
-
-					if (currentDB.exists()) {
-						FileChannel src = new FileInputStream(currentDB)
-								.getChannel();
-						FileChannel dst = new FileOutputStream(backupDB)
-								.getChannel();
-						long copiats = dst.transferFrom(src, 0, src.size());
-						src.close();
-						dst.close();
-						Toast.makeText(getApplicationContext(),
-								"COPIATS :" + copiats, Toast.LENGTH_SHORT).show();
-					} else
-						Toast.makeText(getApplicationContext(),
-								"BBDD No existeix\n" + currentDB, Toast.LENGTH_LONG)
-								.show();
-
-				} catch (Exception e) {
-					Toast.makeText(getApplicationContext(),
-							"BBDD NO COPIADA\n :" + e.getMessage(),
-							Toast.LENGTH_LONG).show();
-				}
+				helper.close();
+				Utilitats.CopiaBBDD(this);
 				break;
 
 			case R.id.restoredb: {
@@ -212,7 +177,7 @@ public class ExecTask extends Activity {
 				try {
 					helper.close();
 					String currentDBPath = "/orders.db";
-					String backupDBPath = "/data/sgb.orders/databases/andorders.db";
+					String backupDBPath = "/data/sgb.tasks/databases/andorders.db";
 					File currentDB = new File(sd2, currentDBPath);
 					File backupDB = new File(data2, backupDBPath);
 
@@ -243,17 +208,7 @@ public class ExecTask extends Activity {
 							case DialogInterface.BUTTON_POSITIVE:
 								// Yes button clicked
 								// helper.close();
-								if (deleteDatabase("andorders.db")) {
-									Log.d("Avis", "deleteDatabase(): database deleted.");
-									Toast.makeText(getApplicationContext(),
-											"Base de dades eliminada",
-											Toast.LENGTH_SHORT).show();
-								} else {
-									Toast.makeText(
-											getApplicationContext(),
-											"No ha estat possible d'esborrar la base de dades",
-											Toast.LENGTH_SHORT).show();
-								}
+								Utilitats.inicialitzaBBDD(ExecTask.this);
 								break;
 
 							case DialogInterface.BUTTON_NEGATIVE:
@@ -443,6 +398,8 @@ public class ExecTask extends Activity {
 				document = extras.getString("document");
 			parametre1 = extras.getString("parametre1");
 			parametre2 = extras.getString("parametre2");
+			if (extras.getString("tipus") != null)
+				tipus  = extras.getString("tipus");
 		}
 
 		progressHeader = (ProgressBar) findViewById(R.id.progressViewHeader);
@@ -503,7 +460,7 @@ public class ExecTask extends Activity {
 					// views.add(new Subjectes(activity, helper, parametre1));
 				} else if (programa.equals("NouDocument")) {
 					titol[0] = "Nou Albarà";
-					views.add(new Cap(activity, helper, client, "0"));
+					views.add(new Cap(activity, helper, client,tipus, "0"));
 					titol[1] = "Client";
 					views.add(new ClientsSgb(activity, helper, client, "0"));
 					titol[2] = "Efectes Pendents";
@@ -669,17 +626,17 @@ public class ExecTask extends Activity {
 				}
 
 				else if (programa.equals("DetallAlta")) {
-					/* LLista de l�nies de comanda */
+					/* LLista de línies de comanda */
 					titol[0] = "Linies de Comanda";
-					views.add(new LlistaLinies(activity, helper, document, true));
-					/* Nova l�nia d'Article */
+					views.add(new LlistaLinies(activity, helper, tipus,document, true));
+					/* Nova línia d'Article */
 					titol[1] = "Gestió de línia";
 				} else if (programa.equals("Detall")) {
-					/* LLista de l�nies de comanda */
+					/* LLista de línies de comanda */
 					titol[0] = "Linies de Comanda";
-					views.add(new LlistaLinies(activity, helper, document,
+					views.add(new LlistaLinies(activity, helper, tipus,document,
 							false));
-					/* Nova l�nia d'Article */
+					/* Nova línia d'Article */
 					titol[1] = "Gestió de línia";
 					/*
 					 * views.add(new XLinia(activity, helper, document));
@@ -700,7 +657,7 @@ public class ExecTask extends Activity {
 					document = parametre2;
 					client = parametre1;
 					titol[0] = "Modificació de Document";
-					views.add(new Cap(activity, helper, client, document));
+					views.add(new Cap(activity, helper, client, tipus,document));
 					titol[1] = "Client";
 					views.add(new ClientsSgb(activity, helper, client, "0"));
 				} else if (programa.equals("Client")) {
@@ -716,13 +673,13 @@ public class ExecTask extends Activity {
 
 					String sql = "select * from rutes";
 					Cursor cursor = helper.execSQL(sql);
-					if (cursor.getCount() <= 0) {
+					if (false && cursor.getCount() <= 0) {
 						if (Utilitats.isOnline(activity) == true) {
 
 							AlertDialog.Builder builder = new AlertDialog.Builder(
 									activity);
 							builder.setMessage(
-									"Vol importar dades de demostraci� ?")
+									"Vol importar dades de demostració ?")
 									.setCancelable(true)
 									.setNegativeButton(
 											"No",
@@ -761,16 +718,23 @@ public class ExecTask extends Activity {
 						} else
 							Toast.makeText(
 									ExecTask.this,
-									"No hi ha connexi� a internet per Importar Dades Demo",
+									"No hi ha connexió a internet per Importar Dades Demo",
 									Toast.LENGTH_SHORT).show();
 
 					}
-					titol[0] = "Línia";
-					views.add(new LlistaRutes(activity, helper));
-					titol[1] = "Albarans Pendents";
-					views.add(new LlistaDocumentPendents(activity, helper));
-					titol[2] = "Albarans Enviats";
-					views.add(new LlistaDocumentEnviats(activity, helper));
+					titol[0] = "Serveis diaris Pendents";
+					views.add(new LlistaDocumentPendents(activity, helper," Cap.Tipus LIKE 'CF%' ",true));
+					titol[1] = "Tots els Serveis pendents";
+					views.add(new LlistaDocumentPendents(activity, helper," Cap.Tipus LIKE 'CF%' ",false));
+					titol[2] = "Serveis Realitzats";
+					views.add(new LlistaDocumentPendents(activity, helper," Cap.Tipus LIKE 'AF%' and Cap.state <> 'E' ",false));
+					titol[3] = "Serveis Enviats";
+					views.add(new LlistaDocumentPendents(activity, helper," Cap.Tipus LIKE 'AF%' and Cap.State = 'E' ",false));
+					titol[4] = "Nou document";
+//					views.add(new LlistaRutes(activity, helper));
+					views.add(new LlistaClientsRuta(activity, helper,
+							null));
+
 
 				}
 				tvHeader.setText(titol[0]);
@@ -780,6 +744,15 @@ public class ExecTask extends Activity {
 			}
 		}
 
+
+		@Override
+		public void destroyItem(ViewGroup view, int arg1, Object object) {
+			((ViewPager) view).removeView((View) object);
+		}
+
+		@Override
+		public void finishUpdate(ViewGroup arg0) {
+		}
 
 		@Override
 		public int getCount() {
@@ -817,6 +790,10 @@ public class ExecTask extends Activity {
 		public void startUpdate(View arg0) {
 
 		}
+
+
+
+
 
 	}
 }

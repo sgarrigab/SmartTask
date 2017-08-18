@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
+import java.nio.channels.FileChannel;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
@@ -33,7 +34,9 @@ import android.net.NetworkInfo;
 import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.Gravity;
 import android.widget.Toast;
 
@@ -92,7 +95,7 @@ public class Utilitats {
 		public String descripcio;
 
 		public String tipDte; // Tipus de descompte a aplicar
-								// '=','-','+',' ','%'
+		// '=','-','+',' ','%'
 		public double quantitat;
 		public double dte; // Valor del dte o import
 		public double preuBase; // Preu base sobre el que s'aplica el dte
@@ -100,12 +103,14 @@ public class Utilitats {
 		public double preuNet;
 		public double quantitatRegal;
 		public String modeRegal; // Si '*' dividim la quantitat per la
-									// quantitatRegal
+		// quantitatRegal
 		public String articleRegal;
-	};
+	}
+
+	;
 
 	static public Cursor Query(OrdersHelper helper, String sql) {
-		tmpCur = helper.getWritableDatabase().rawQuery(sql, new String[] {});
+		tmpCur = helper.getWritableDatabase().rawQuery(sql, new String[]{});
 		if (tmpCur.getCount() > 0) {
 			tmpCur.moveToFirst();
 			return tmpCur;
@@ -115,16 +120,45 @@ public class Utilitats {
 	}
 
 	public static Boolean InicialitzaBBDD(final OrdersHelper helper) {
-		String db[] = new String[] { "contactes", "comentaris", "taules",
+
+		helper.getWritableDatabase().delete("Cap", " Tipus LIKE 'CF%' ", null);
+		helper.getWritableDatabase().delete("Linia", " Tipus LIKE 'CF%' ", null);
+//				new String[] { "R" });
+
+/*		String db[] = new String[] { "contactes", "comentaris", "taules",
 				"families", "linies", "rutes", "efectes", "tarifes",
 				"PreusEsp", "Locations", "Precomanda", "Articles", "GrupCli",
 				"Clients", "CliRuta" };
 		for (int i = 0; i < db.length; i++) {
 			helper.getWritableDatabase().delete(db[i], null, null);
 
-		}
+		}  */
 		return true;
 	}
+
+
+	public static Boolean NetejaEnviats(Activity act) {
+
+		OrdersHelper helper = new OrdersHelper(act);
+
+		helper.getWritableDatabase().delete("Cap", " Tipus LIKE 'AF%' ", null);
+		helper.getWritableDatabase().delete("Linia", " Tipus LIKE 'AF%' ", null);
+
+		helper.close();
+		ShowModal(act,"Procés realitzat");
+//				new String[] { "R" });
+
+/*		String db[] = new String[] { "contactes", "comentaris", "taules",
+				"families", "linies", "rutes", "efectes", "tarifes",
+				"PreusEsp", "Locations", "Precomanda", "Articles", "GrupCli",
+				"Clients", "CliRuta" };
+		for (int i = 0; i < db.length; i++) {
+			helper.getWritableDatabase().delete(db[i], null, null);
+
+		}  */
+		return true;
+	}
+
 
 	public static String Format(String pattern, double s) {
 		DecimalFormat myFormatter = new DecimalFormat(pattern);
@@ -140,7 +174,7 @@ public class Utilitats {
 	}
 
 	static public String QueryField(OrdersHelper helper, String sql,
-			String field) {
+									String field) {
 		if (Query(helper, sql) == null)
 			return null;
 		else
@@ -157,7 +191,7 @@ public class Utilitats {
 	}
 
 	static public String CursorFloatField(Cursor c, String field,
-			String format, char fillChar, int mult) {
+										  String format, char fillChar, int mult) {
 
 		String num = c.getString(c.getColumnIndex(field));
 		Double fnum = 0.0;
@@ -178,7 +212,7 @@ public class Utilitats {
 	}
 
 	static public String CursorField(Cursor c, String field, String format,
-			char fillChar) {
+									 char fillChar) {
 
 		String out = String
 				.format(format, c.getString(c.getColumnIndex(field))).replace(
@@ -187,7 +221,7 @@ public class Utilitats {
 	}
 
 	static public String String2Date(String input, String inputFormat,
-			String outputFormat) {
+									 String outputFormat) {
 		String rt = "";
 		try {
 			SimpleDateFormat formatter = new SimpleDateFormat(inputFormat);
@@ -205,7 +239,7 @@ public class Utilitats {
 	}
 
 	static String getProfile(Activity act, Properties propInp, String file,
-			String text) {
+							 String text) {
 		String ret = "_";
 		Properties prop = propInp;
 		if (prop == null)
@@ -369,45 +403,45 @@ public class Utilitats {
 	}
 
 	public static File getWorkFolder(Activity act, String fold) {
-		if (comprovaFolder("/sgb.orders") == null) {
+		if (comprovaFolder("/sgb.tasks") == null) {
 			Errors.appendLog(act, Errors.ERROR, "ComprovaSD",
-					"No s'ha pogut crear directori sdcard/sgb.orders", null,
+					"No s'ha pogut crear directori sdcard/sgb.tasks", null,
 					null, true);
 			return null;
 		} else {
 			if (fold.equals(Utilitats.CONFIG))
-				return comprovaFolder("/sgb.orders/" + Utilitats.CONFIG);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.CONFIG);
 			if (fold.equals(Utilitats.WORK))
-				return comprovaFolder("/sgb.orders/" + Utilitats.WORK);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.WORK);
 			if (fold.equals(Utilitats.BACKUP))
-				return comprovaFolder("/sgb.orders/" + Utilitats.BACKUP);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.BACKUP);
 			if (fold.equals(Utilitats.IMPORT))
-				return comprovaFolder("/sgb.orders/" + Utilitats.IMPORT);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.IMPORT);
 			if (fold.equals(Utilitats.EXPORT))
-				return comprovaFolder("/sgb.orders/" + Utilitats.EXPORT);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.EXPORT);
 			if (fold.equals(Utilitats.IMPORTED))
-				return comprovaFolder("/sgb.orders/" + Utilitats.IMPORTED);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.IMPORTED);
 			if (fold.equals(Utilitats.EXPORTED))
-				return comprovaFolder("/sgb.orders/" + Utilitats.EXPORTED);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.EXPORTED);
 			if (fold.equals(Utilitats.LOGS))
-				return comprovaFolder("/sgb.orders/" + Utilitats.LOGS);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.LOGS);
 			if (fold.equals(Utilitats.IMAGES))
-				return comprovaFolder("/sgb.orders/" + Utilitats.IMAGES);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.IMAGES);
 			if (fold.equals(Utilitats.FOTOS))
-				return comprovaFolder("/sgb.orders/" + Utilitats.FOTOS);
+				return comprovaFolder("/sgb.tasks/" + Utilitats.FOTOS);
 		}
 		return null;
 	}
 
 	static public void enviarComandaPerMail(Activity act, OrdersHelper helper,
-			long docum) {
+											long docum) {
 		Boolean error = false;
 		StringBuffer bf = new StringBuffer();
 		String sql = "select * from Linia where docum = " + docum;
 		Cursor cur = helper.execSQL(sql);
 		Cursor curCap = helper.getWritableDatabase().rawQuery(
-				"select * from Cap where _id=?",
-				new String[] { Long.toString(docum) });
+				"select * from Cap where docum=?",
+				new String[]{Long.toString(docum)});
 		if (curCap.getCount() < 0) {
 			Errors.appendLog(act, Errors.ERROR, "EnviarPerMail", docum
 					+ ": No s'ha trobat Document", null, null, true);
@@ -420,7 +454,7 @@ public class Utilitats {
 			client = curCap.getString(curCap.getColumnIndex("client"));
 			curCli = helper.getWritableDatabase().rawQuery(
 					"select * from Clients where subjecte=?",
-					new String[] { client });
+					new String[]{client});
 			if (curCli.getCount() < 0) {
 				Errors.appendLog(act, Errors.ERROR, "EnviarPerMail", client
 						+ ": No s'ha trobat Client", null, null, true);
@@ -455,7 +489,7 @@ public class Utilitats {
 					String article = cur.getString(iArt);
 					Cursor curArt = helper.getWritableDatabase().rawQuery(
 							"select descripcio from Articles where article=?",
-							new String[] { article });
+							new String[]{article});
 					if (curArt.getCount() < 0) {
 						Errors.appendLog(act, Errors.ERROR, "EnviarPerMail",
 								article + ": No s'ha trobat Article", null,
@@ -467,7 +501,7 @@ public class Utilitats {
 					bf.append(String.format("| %3.2f | %-70.70s\n", q, curArt
 							.getString(curArt.getColumnIndex("descripcio")), p));
 					String obs = cur.getString(cur.getColumnIndex("notes"));
-					if (obs != null)
+					if (obs != null && obs.length() > 0)
 						bf.append(String.format("| %3.2f | %-70.70s\n", q, obs));
 				}
 			}
@@ -481,7 +515,7 @@ public class Utilitats {
 						android.content.Intent.ACTION_SEND);
 				emailIntent.setType("plain/text");
 				emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL,
-						new String[] { mail + ";salvador@reset.cat" });
+						new String[]{mail + ";salvador@reset.cat"});
 				emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
 						"Document : " + docum
 								+ " Conforme de Persona autoritzada : [Nom] ");
@@ -506,7 +540,7 @@ public class Utilitats {
 	}
 
 	static public void enviarFitxerPerMail(Activity act, OrdersHelper helper,
-			String fitxer, String mail) {
+										   String fitxer, String mail) {
 
 		if (mail != null) {
 			Intent emailIntent = new Intent(
@@ -514,7 +548,7 @@ public class Utilitats {
 			emailIntent.setType("plain/text");
 			emailIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL,
-					new String[] { mail });
+					new String[]{mail});
 			// new String[] { mail + ";salvador@reset.cat" });
 			emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
 					"Tramesa Informe de Vendes ");
@@ -554,18 +588,20 @@ public class Utilitats {
 		// activity.startActivity(new Intent(activity, activity.getClass()));
 	}
 
-	/** Set the theme of the activity, according to the configuration. */
+	/**
+	 * Set the theme of the activity, according to the configuration.
+	 */
 	public static void onActivityCreateSetTheme(Activity activity) {
 		switch (sTheme) {
-		default:
-		case THEME_DEFAULT:
-			break;
-		case THEME_WHITE:
-			activity.setTheme(R.style.Theme_White);
-			break;
-		case THEME_BLUE:
-			activity.setTheme(R.style.Theme_Blue);
-			break;
+			default:
+			case THEME_DEFAULT:
+				break;
+			case THEME_WHITE:
+				activity.setTheme(R.style.Theme_White);
+				break;
+			case THEME_BLUE:
+				activity.setTheme(R.style.Theme_Blue);
+				break;
 		}
 	}
 
@@ -630,16 +666,8 @@ public class Utilitats {
 	}
 
 	static String calculaTotals(OrdersHelper helper, long docum) {
-		double total = calculTotals(helper, docum);
-		ContentValues cv = new ContentValues();
-		cv.put("_id", docum);
-		NumberFormat formatter = new DecimalFormat("#0.00");
-		String total1 = formatter.format(total);
-		cv.put("value", total);
-		helper.update("Cap", "_id", cv);
-
-		// TODO Falta validar la gravaci�
-		return total1;
+		double total = 0;
+		return "";
 	}
 
 	static double getDouble(Cursor cur, int pos) {
@@ -649,11 +677,11 @@ public class Utilitats {
 	static double calculTotals(OrdersHelper helper, long docum) {
 
 		String sql = "select A.iva,C.dtecomercial,C.dtepp,C.dtegrup,tipus_factura,numeric1,numeric2,L.quant,L.preu,preunet,dte,tipdte from Linia L "
-				+ " LEFT OUTER JOIN Cap C ON C._id  = L.docum "
+				+ " LEFT OUTER JOIN Cap C ON C.tipus  = L.tipus and C.docum = L.docum "
 				+ " LEFT OUTER JOIN Articles A ON A.article = L.article "
 				+ " LEFT OUTER JOIN Taules T ON T.claugest    = A.iva "
 				+ " LEFT OUTER JOIN Clients S ON S.subjecte = C.client "
-				+ " where docum = " + docum;
+				+ " where L.docum = " + docum;
 
 		double totfac = 0;
 		Cursor cur = helper.execSQL(sql);
@@ -696,14 +724,6 @@ public class Utilitats {
 				String tipiva = cur.getString(iTipIva);
 				double re = getDouble(cur, iRe);
 				double iva = getDouble(cur, iIva);
-				if (tipfac.equals("W0")) {
-					re = 0;
-					iva = 0;
-				}
-				if (tipfac.equals("W1"))
-					re = 0;
-				double impIva = pr.quantitat * pr.preuNet * (iva + re) / 100;
-				totfac += pr.quantitat * pr.preuNet + impIva;
 			}
 		}
 		cur.close();
@@ -747,8 +767,8 @@ public class Utilitats {
 	}
 
 	static Boolean getDte(Activity act, OrdersHelper helper, String subjecte,
-			String tarifa, String article, String linia, String familia,
-			double quantitat, TPreus preus) {
+						  String tarifa, String article, String linia, String familia,
+						  double quantitat, TPreus preus) {
 
 		/*
 		 * Llegim per Ordre : Subjecte -Primer el client i despr�s el comodin
@@ -810,24 +830,12 @@ public class Utilitats {
 	}
 
 	static TPreus reCalculaPreus(TPreus preus) {
-		if (preus.tipDte.equals("+")) {
-			preus.preuNet = preus.preuBase + (preus.dte);
-		} else if (preus.tipDte.equals("-")) {
-			preus.preuNet = preus.preuBase - (preus.dte);
-		} else if (preus.tipDte.equals("=")) {
-			preus.preuNet = preus.dte;
-			preus.preuBase = preus.dte;
-		} else // "%"
-		if (preus.preuBase * preus.dte != 0)
-			preus.preuNet = preus.preuBase - (preus.preuBase * preus.dte / 100);
-		else
-			preus.preuNet = preus.preuBase;
 		return preus;
 	}
 
 	static TPreus readPreus(Activity act, OrdersHelper helper, String subjecte,
-			String tarifa, String article, String familia, String linia,
-			double quantitat) {
+							String tarifa, String article, String familia, String linia,
+							double quantitat) {
 		TPreus preus = new TPreus();
 
 		if (getDte(act, helper, subjecte, tarifa, article, familia, linia,
@@ -838,7 +846,7 @@ public class Utilitats {
 				|| tarifa.compareTo("6") > 0)
 			tarifa = "1";
 		String sql = "select * from tarifes where tarifa = ? and article = ?";
-		String[] param2 = { tarifa, article };
+		String[] param2 = {tarifa, article};
 		curEsp = helper.getReadableDatabase().rawQuery(sql, param2);
 		if (curEsp.getCount() > 0) {
 			curEsp.moveToNext();
@@ -847,7 +855,7 @@ public class Utilitats {
 		} else {
 			String txt = "tarifa" + tarifa;
 			sql = "select * from articles where article = ?";
-			String param3[] = { article };
+			String param3[] = {article};
 			curEsp = helper.getReadableDatabase().rawQuery(sql, param3);
 			if (curEsp.getCount() > 0) {
 				curEsp.moveToNext();
@@ -895,8 +903,7 @@ public class Utilitats {
 	}
 
 	public static String getMac(Activity act) {
-		WifiManager wimanager = (WifiManager) act
-				.getSystemService(Context.WIFI_SERVICE);
+        WifiManager wimanager =(WifiManager) act.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
 		String macAddress = wimanager.getConnectionInfo().getMacAddress();
 		if (macAddress == null) {
 			Utilitats.Toast(act, "Dispositius no te MAC o wifi desactivada");
@@ -907,7 +914,7 @@ public class Utilitats {
 	/**
 	 * Funci�n que elimina acentos y caracteres especiales de una cadena de
 	 * texto.
-	 * 
+	 *
 	 * @param input
 	 * @return cadena de texto limpia de acentos y caracteres especiales.
 	 */
@@ -989,6 +996,15 @@ public class Utilitats {
 		}
 		return prop;
 	}
+
+	static public String getTerminalUser(Context cx) {
+		Prefs prefs = Prefs.getInstance(cx);
+		String User = prefs.getString("ftpFolder","");
+		prefs.close();
+		return User;
+	}
+
+
 
 	static public String getConfig(Activity act, String s) {
 		return getProfile(act, null, "config.properties", s);
@@ -1129,7 +1145,7 @@ public class Utilitats {
 	 */
 
 	public static boolean Descarrega(Activity act, MapTables mapTables,
-			FTPListener listener) {
+									 FTPListener listener) {
 		if (isOnline(act) == false)
 			return false;
 		boolean ok = false;
@@ -1170,7 +1186,7 @@ public class Utilitats {
 			String dir = Utilitats.getWorkFolder(act, Utilitats.IMAGES)
 					.getAbsolutePath();
 			ftp.Connecta();
-			ftp.DownLoadFiles(dir, "pictures", "*.*", true);
+			ftp.DownLoadFiles(dir, "pictures", "*.*", true, false);
 			ftp.Desconnecta();
 			ok = true;
 		} catch (IllegalStateException e) {
@@ -1194,8 +1210,85 @@ public class Utilitats {
 	}
 
 
-	static String  getString(Cursor c,String name)
-	{
+	public static void EsborrarDirectori(File file) {
+		File[] files = file.listFiles();
+		if (files != null) {
+			for (File file1 : files) {
+				if (!file1.isDirectory()) {
+					if (!file1.delete()) {
+
+					}
+				}
+			}
+		}
+	}
+
+	public static int DescarregaFitxers(Activity act, String Folder, String Filter, FTPListener listener, Boolean Esborrar) {
+		if (isOnline(act) == false)
+			return 0;
+		int ContFiles = 0;
+		Boolean Err = true;
+		Ftp ftp = new Ftp(act, listener);
+		try {
+			String dir = Utilitats.getWorkFolder(act, Utilitats.IMPORT)
+					.getAbsolutePath();
+			ftp.Connecta();
+			ContFiles = ftp.DownLoadFiles(dir, Folder, Filter, true, Esborrar);
+			ftp.Desconnecta();
+			Err=false;
+		} catch (IllegalStateException e) {
+			ftp.setError(e.getMessage());
+		} catch (IOException e) {
+			ftp.setError(e.getMessage());
+		} catch (FTPIllegalReplyException e) {
+			ftp.setError(e.getMessage());
+		} catch (FTPException e) {
+			ftp.setError(e.getMessage());
+		} catch (FTPDataTransferException e) {
+			ftp.setError(e.getMessage());
+		} catch (FTPAbortedException e) {
+			ftp.setError(e.getMessage());
+		} catch (Exception e) {
+			ftp.setError(e.getMessage());
+		}
+		if (Err == true)
+			Utilitats.Toast(act, ftp.getError(), true);
+		return ContFiles;
+	}
+
+	static String getCurrentUser(Context ct) {
+
+		String user;
+		Prefs prefs = Prefs.getInstance(ct);
+		user = prefs.getString("CurrentUser","");
+		prefs.close();
+		return user;
+	}
+
+	static void setCurrentUser(Context ct,String user) {
+
+		Prefs prefs = Prefs.getInstance(ct);
+		prefs.setString("CurrentUser", user);
+		prefs.close();
+	}
+
+	static void inicialitzaBBDD(Activity act) {
+
+		if (act.deleteDatabase("andorders.db")) {
+			Log.d("Avis", "deleteDatabase(): database deleted.");
+			Toast.makeText(act,
+					"Base de dades eliminada",
+					Toast.LENGTH_SHORT).show();
+		} else {
+			Toast.makeText(
+					act,
+					"No ha estat possible d'esborrar la base de dades",
+					Toast.LENGTH_SHORT).show();
+		}
+	}
+
+
+	static String getString(Cursor c, String name) {
 		String rt = c.getString(c.getColumnIndex(name));
 		if (rt == null)
 			rt = "";
@@ -1205,19 +1298,19 @@ public class Utilitats {
 	static int ShowModal(Context ct, String Text) {
 		so(ct, R.raw.capella);
 		Intent it = new Intent(ct, DialogError.class);
-		it.putExtra("Text", Text);
+		it.putExtra("MsgError", Text);
 		ct.startActivity(it);
 		return 0;
 	}
 
-	static Boolean SaveImage(Bitmap bmp,String filename) {
-		Boolean rt=false;
+	static Boolean SaveImage(Bitmap bmp, String filename) {
+		Boolean rt = false;
 		FileOutputStream out = null;
 		try {
 			out = new FileOutputStream(filename);
 			bmp.compress(Bitmap.CompressFormat.JPEG, 100, out); // bmp is your
-																// Bitmap
-																// instance
+			// Bitmap
+			// instance
 			// PNG is a lossless format, the compression factor (100) is ignored
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -1233,4 +1326,55 @@ public class Utilitats {
 		return rt;
 	}
 
+
+
+	static Boolean CopiaBBDD(Activity act) {
+		Boolean Error = false;
+
+		String Sd1 = Environment.getExternalStorageState();
+		String Sd2 = Environment.MEDIA_MOUNTED;
+		if(!Environment.MEDIA_MOUNTED.equals(Sd1))
+
+		{
+			Toast.makeText(act.getApplicationContext(),
+					"External SD card not mounted", Toast.LENGTH_LONG)
+					.show();
+		}
+
+		File sd = Utilitats.getWorkFolder(act, Utilitats.BACKUP);
+		if (sd == null)
+			return false;
+		if (!sd.exists())
+			sd.mkdirs();
+		File data = Environment.getDataDirectory();
+
+		try {
+			String currentDBPath = "/data/sgb.tasks/databases/andorders.db";
+			String backupDBPath = "orders.db";
+			File currentDB = new File(data, currentDBPath);
+			File backupDB = new File(sd, backupDBPath);
+
+			if (currentDB.exists()) {
+				FileChannel src = new FileInputStream(currentDB)
+						.getChannel();
+				FileChannel dst = new FileOutputStream(backupDB)
+						.getChannel();
+				long copiats = dst.transferFrom(src, 0, src.size());
+				src.close();
+				dst.close();
+				Toast.makeText(act.getApplicationContext(),
+						"COPIATS :" + copiats, Toast.LENGTH_SHORT).show();
+			} else
+				Toast.makeText(act.getApplicationContext(),
+						"BBDD No existeix\n" + currentDB, Toast.LENGTH_LONG)
+						.show();
+
+		} catch (Exception e) {
+			Error = true;
+			Toast.makeText(act.getApplicationContext(),
+					"BBDD NO COPIADA\n :" + e.getMessage(),
+					Toast.LENGTH_LONG).show();
+		}
+	return Error;
+	}
 }

@@ -31,8 +31,8 @@ public class Csv2Sqlite {
 		try {
 			CsvReader reader = new CsvReader(new InputStreamReader(
 					new FileInputStream(Utilitats.getWorkFolder(act,
-							Utilitats.IMPORT).getAbsolutePath()
-							+ "/" + file), Charset.forName("UTF-8")));
+							Utilitats.WORK).getAbsolutePath()
+							+ "/" + file+".TMP"), Charset.forName("ISO-8859-1")));
 
 			reader.setDelimiter(';');
 
@@ -57,9 +57,9 @@ public class Csv2Sqlite {
 
 			CsvReader reader;
 			reader = new CsvReader(new InputStreamReader(new FileInputStream(
-					Utilitats.getWorkFolder(act, Utilitats.IMPORT)
-							.getAbsolutePath() + "/" + file),
-					Charset.forName("ISO-8859-1")));
+					Utilitats.getWorkFolder(act, Utilitats.WORK)
+							.getAbsolutePath() + "/" + file+".TMP")));
+//					Charset.forName("windows-1252")));
 			reader.setDelimiter(';');
 			boolean head=false;
 			int numCamps = 0;
@@ -84,7 +84,7 @@ public class Csv2Sqlite {
 				String sts = reader.getRawRecord();
 				String val1 = reader.get(1);
 				String val2 = reader.get(2);
-
+				System.gc();
 				List<String> Types = new ArrayList<String>();
 
 				ContentValues cnt = new ContentValues();
@@ -101,7 +101,7 @@ public class Csv2Sqlite {
 								// Descartem les constants Numeriques & Cadenes
 								// (
 								// comencen per "
-								String csvFieldName = s.getCamp();
+								String csvFieldName = s.getCamp().toUpperCase();
 								Boolean esConstant = false;
 								Boolean esIndex = csvFieldName != null
 										&& (csvFieldName.charAt(0) >= '0' && csvFieldName
@@ -117,9 +117,11 @@ public class Csv2Sqlite {
 												+ " : No es troba el Camp");
 										error++;
 									}
+
 								}
 							}
 					}
+
 				}
 
 				if (error == 0 && cur != null) {
@@ -131,7 +133,7 @@ public class Csv2Sqlite {
 						int numCamp = 0;
 						if (cm != null) {
 							for (CampTxt s : cm) {
-								String csvFieldName = s.getCamp();
+								String csvFieldName = s.getCamp().toUpperCase();
 
 								if (csvFieldName == null)
 									; // Utilitats.Toast(act,file+"."+fieldName+
@@ -178,19 +180,20 @@ public class Csv2Sqlite {
 				registres++;
 				if (cnt.size() > 0) {
 					if (esUpdate)
-						result = helper.update(mapTaula.getValue(),
+						result = helper.InsertOrUpdate(mapTaula.getValue(),
 								mapTaula.getKeyField(), cnt);
 					else
 						result = helper.replace(mapTaula.getValue(),
 								mapTaula.getValue(), cnt);
 					gravats++;
 				}
+
 				ntf.Avisa(++pos);
 
 			}
 //			Utilitats.Toast(act, tab + " Llegits: " + registres + " Gravats: "
 //					+ gravats);
-
+			cur.close();
 			reader.close();
 		} catch (IOException e) {
 			Errors.appendLog(act, Errors.ERROR, "PROGRAMA",

@@ -123,6 +123,8 @@ public class Gps extends Activity implements LocationListener,OnClickListener {
 		Log.d("Latitude", "status");
 	}
 
+
+
 	private void turnGPSOn() {
 
 		startActivity(new Intent(

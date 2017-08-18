@@ -136,11 +136,12 @@ public class Ftp {
 			throws IllegalStateException, FileNotFoundException, IOException,
 			FTPIllegalReplyException, FTPException, FTPDataTransferException,
 			FTPAbortedException {
+		int ContFiles=0;
 		int downloaded = 0;
 		String dirRemot="/";
-		if (inWorkFolder && !workFolder.isEmpty()) {
-			dirRemot= "/"+workFolder+dirRemot;
-		}
+//		if (inWorkFolder && !workFolder.isEmpty()) {
+//			dirRemot= "/"+workFolder+dirRemot;
+//		}
 		ChangeDirectory(dirRemot);
 		
 		for (Taules tb : mapTables.getTaules()) {
@@ -168,12 +169,12 @@ public class Ftp {
 	int DownLoadFile(Boolean inWorkFolder,String dirRemot, String filRemot, String dirLocal,
 			String filLocal, Boolean Throw) throws Exception {
 
-		if (inWorkFolder && !workFolder.isEmpty()) {
-			dirRemot= "/"+workFolder+"/"+dirRemot;
-			ChangeDirectory(dirRemot);
-		}
-		else
-			ftp.changeDirectory("/");
+	//	if (inWorkFolder && !workFolder.isEmpty()) {
+	//		dirRemot= "/"+workFolder+"/"+dirRemot;
+	//		ChangeDirectory(dirRemot);
+	//	}
+	//	else
+	//		ftp.changeDirectory("/");
 		if (filLocal == null)
 			filLocal = filRemot;
 		if (dirLocal == null)
@@ -190,7 +191,6 @@ public class Ftp {
 				else
 					throw new Exception("No es pot crear folder " + dirRemot);
 			}
-
 			else {
 				if (!Throw)
 					return 0;
@@ -200,6 +200,7 @@ public class Ftp {
 									+ filRemot);
 			}
 		}
+
 		FTPFile[] listImgs = ftp.list(filRemot);
 		if (listImgs.length <= 0)
 			if (!Throw)
@@ -223,13 +224,14 @@ public class Ftp {
 
 	}
 
-	public void DownLoadFiles(String DirLocal, String DirRemot, String fitxers,
-			Boolean comparar) throws IllegalStateException, IOException,
+	public int DownLoadFiles(String DirLocal, String DirRemot, String fitxers,
+			Boolean comparar,Boolean Esborrar) throws IllegalStateException, IOException,
 			FTPIllegalReplyException, FTPException, FTPDataTransferException,
 			FTPAbortedException, FTPListParseException {
+		int ContFiles=0;
 		ChangeDirectory(DirRemot);
 		String dir = ftp.currentDirectory();
-		FTPFile[] listImgs = ftp.list("*.*");
+		FTPFile[] listImgs = ftp.list(fitxers);
 		for (FTPFile listImg : listImgs) {
 			String fl = listImg.getName();
 			Date date = listImg.getModifiedDate();
@@ -247,12 +249,16 @@ public class Ftp {
 				File miniatura = new File (DirLocal + "/_" + fl);
 				if (comparar = true  && miniatura.exists())
 					miniatura.delete();
-
-				ftp.download(fl, new File(fitxer), listener);
+				File downFile=new File(fitxer);
+				ftp.download(fl, downFile, listener);
+				ContFiles++;
+				if (Esborrar && downFile.exists())
+					ftp.deleteFile(fl);
 			}
 
 		}
 		ftp.changeDirectoryUp();
+		return ContFiles;
 
 	}
 	/*

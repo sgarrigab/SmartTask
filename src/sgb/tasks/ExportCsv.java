@@ -14,10 +14,13 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 
 import android.app.Activity;
+import android.content.ContentValues;
 import android.database.Cursor;
 import android.media.MediaPlayer;
 import android.text.format.DateFormat;
@@ -111,8 +114,8 @@ public class ExportCsv extends Thread {
 		});
 	}
 
-	void enviar(String fitxers[],String fitxerClient) {
-
+	int enviar(String fitxers[]) {
+		int ContFiles=0;
 		Prefs prefs = Prefs.getInstance(act.getApplicationContext());
 		String carpeta = prefs.getString("ftpFolder", "");
 		String host = prefs.getString("ftpServer", "");
@@ -141,13 +144,9 @@ public class ExportCsv extends Thread {
 				File fp = new java.io.File(file);
 				if (fp.length() > 0) {
 					ftp.upload(fp, new TransferListener(this, fp.length()));
+					ContFiles++;
 				}
 
-			}
-			if (fitxerClient != null) {
-				File fp = new java.io.File(Utilitats.getWorkFolder(act, Utilitats.EXPORT)
-						+ "/" + fitxerClient);
-				ftp.upload(fp, new TransferListener(this, fp.length()));
 			}
 
 			File storageDir = Utilitats.getWorkFolder(act, Utilitats.FOTOS);
@@ -197,7 +196,7 @@ public class ExportCsv extends Thread {
 		} finally {
 
 		}
-
+	return  ContFiles;
 	}
 
 
@@ -284,55 +283,35 @@ public class ExportCsv extends Thread {
 		helper.close();
 	}
 
-	public String GeneraFitxerCsv(OrdersHelper helper, String taula,
-			String prefix, String num) throws IOException {
-		FileOutputStream fcap = null;
-		BufferedOutputStream cap = null;
-		String fitxer = prefix + "_" + num + ".dat";
-		File wcap = new File(Utilitats.getWorkFolder(act, Utilitats.EXPORT)
-				+ "/" + fitxer);
-		wcap.createNewFile();
-		fcap = new FileOutputStream(wcap);
-		cap = new BufferedOutputStream(fcap);
-		String sql = "select * from " + taula + "  where state = 'F' ";
-		Cursor ctr = helper.execSQL(taula);
+	public void GeneraFitxerCsv(OrdersHelper helper, String Sql,String taula,
+								  BufferedOutputStream cap) throws IOException {
+		Cursor ctr = helper.execSQL(Sql);
 
 //		DatabaseProperties dbProp = new DatabaseProperties(helper);
-		TableProperties tbProp = new TableProperties(helper,taula);
-		Iterator<TableFieldProperties> e1 = tbProp
-				.getTableFieldProperties().iterator();
-		while (e1.hasNext()) {
-			TableFieldProperties st = (TableFieldProperties) e1.next();
-			String nm = st.getName();
-			cap.write( (nm + ";")
-					.getBytes());
 
-		}
+		int num = ctr.getColumnCount();
+
+		cap.write( ("<@"+taula+">\n").getBytes());
+		for (int i = 0; i < num; ++i)
+			cap.write((ctr.getColumnName(i)+";").getBytes());
 		cap.write("\n".getBytes());
-
 		if (ctr.getCount() > 0) {
 			ctr.moveToFirst();
 			do {
-
-				Iterator<TableFieldProperties> e = tbProp
-						.getTableFieldProperties().iterator();
-				while (e.hasNext()) {
-					TableFieldProperties st = (TableFieldProperties) e.next();
-					String nm = st.getName();
-					String vl = ctr.getString(ctr.getColumnIndex(nm));
-					if (vl==null) vl="";
-
-					cap.write((vl + ";")
-							.getBytes());
-
+				num = ctr.getColumnCount();
+				for (int i = 0; i < num; ++i) {
+					String cmp = ctr.getString(i);
+					if (cmp == null) cmp= " ";
+					cmp = cmp.replace(';', ',').replace('\n', '\t').replace('\r', '\t');
+					cap.write(cmp.getBytes());
+					cap.write(";".getBytes());
 				}
 				cap.write("\n".getBytes());
 
 			} while (ctr.moveToNext() == true);
 
 		}
-		cap.close();
-		return fitxer;
+		cap.write( ("</@"+taula+">\n").getBytes());
 	}
 
 	public void run() {
@@ -342,19 +321,7 @@ public class ExportCsv extends Thread {
 		OrdersHelper helper = null;
 		String sql = "select * from cap where state = 'F' ";
 		helper = new OrdersHelper(act);
-
-		try {
-			GeneraFitxerCsv(helper, "select * from Clients", "cli", "11");
-		} catch (IOException e) {
-			Utilitats.ShowModal(act,e.getMessage());
-		}
-
-
-
 		Cursor ctr = helper.execSQL(sql);
-
-
-
 
 		if ( ctr.getCount() <= 0) {
 			Utilitats.Toast(act, "No hi ha comandes pendents d'enviament");
@@ -366,285 +333,43 @@ public class ExportCsv extends Thread {
 		}
 		swEnviant = true;
 
-		Prefs prefs = Prefs.getInstance(act);
-		String serie = prefs.getString("serie", "CCA").trim();
-		prefs.close();
-
-		File wcap = null; // Capcalera
-		File wdet = null; // Detall
-		File wctd = null; // Comptadors
-		FileOutputStream fcap = null;
-		FileOutputStream fdet = null;
-		FileOutputStream fctd = null;
-		BufferedOutputStream cap = null;
-		BufferedOutputStream det = null;
-		BufferedOutputStream ctd = null;
-		int numLin = 0;
-		int progressPos = 0;
-		String taula[] = new String[4];
-		String fitxer[] = new String[3];
 
 		Date date = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMddHHmmss");
 		String s = formatter.format(date);
-		String fitxerClients = null;
+		String fitxer = "TM-"+s+".CSV";
+		String pathFile;
+
 
 		comandesAEnviar = 0;
 
+
 		try {
-
-			helper = new OrdersHelper(act);
-			fitxer[0] = "cap_" + s + ".dat";
-			fitxer[1] = "det_" + s + ".dat";
-			fitxer[2] = "ctd_" + s + ".dat";
-
-			taula[0] = Utilitats.getWorkFolder(act, Utilitats.EXPORT) + "/"
-					+ fitxer[0];
-			taula[1] = Utilitats.getWorkFolder(act, Utilitats.EXPORT) + "/"
-					+ fitxer[1];
-			taula[2] = Utilitats.getWorkFolder(act, Utilitats.EXPORT) + "/"
-					+ fitxer[2];
-
-			wcap = new File(taula[0]);
-			wdet = new File(taula[1]);
-			wctd = new File(taula[2]);
-
+			FileOutputStream fcap = null;
+			BufferedOutputStream cap = null;
+			pathFile = Utilitats.getWorkFolder(act, Utilitats.EXPORT)
+					+ "/" + fitxer;
+			File wcap = new File(pathFile);
 			wcap.createNewFile();
-			wdet.createNewFile();
-			wctd.createNewFile();
-
 			fcap = new FileOutputStream(wcap);
 			cap = new BufferedOutputStream(fcap);
-
-			fdet = new FileOutputStream(wdet);
-			det = new BufferedOutputStream(fdet);
-
-			fctd = new FileOutputStream(wctd);
-			ctd = new BufferedOutputStream(fctd);
-
-			setProgres(0, ExportCsv.INI_EXPORTACIO); // Activat barra de
-														// progress
-			String newDate = "xxx";
 			sql = "select * from cap where state = 'F' ";
-			ctr = helper.execSQL(sql);
-			if ((comandesAEnviar = ctr.getCount()) > 0) {
-				progressPos = 10000 / (ctr.getCount());
-				ctr.moveToFirst();
-				do {
-					setProgres(progressPos * numLin++, 0);
-					cap.write("10;A;".getBytes());
-					cap.write(serie.getBytes());
-					cap.write((";" + ctr.getString(ctr.getColumnIndex("_id")) + ";") // Document
-							.getBytes());
-					String data_entrega = "";
-
-					try {
-						String str_date = ctr.getString(ctr
-								.getColumnIndex("data"));
-						data_entrega = ctr.getString(ctr
-								.getColumnIndex("entrega"));
-						DateFormat formatter2;
-						Date date2;
-						formatter = new SimpleDateFormat("yyyy-MM-dd");
-						date = (Date) formatter.parse(str_date);
-						SimpleDateFormat dateformat = new SimpleDateFormat(
-								"ddMMyyyy");
-						newDate = dateformat.format(date);
-						date = (Date) formatter.parse(data_entrega);
-						data_entrega = dateformat.format(date);
-					}
-
-					catch (java.text.ParseException e)
-
-					{
-						Errors.appendLog(act, Errors.ERROR, "ExportCsv",
-								"Error parsing data", e, null, true);
-						return;
-
-					}
-
-					catch (Throwable t) {
-						Errors.appendLog(act, Errors.ERROR, "ExportCsv",
-								"Error parsing data", t, null, true);
-						return;
-
-					}
-
-					cap.write((newDate + ";").getBytes());
-					// cap.write("N;;".getBytes());
-					String cmp = ctr.getString(ctr.getColumnIndex("notes"));
-					cmp = cmp.replace(';', ',').replace('\n', '\t');
-					cap.write((cmp+";").getBytes());
-					cap.write((data_entrega + ";").getBytes());
-
-					cap.write((ctr.getString(ctr.getColumnIndex("client")) + ";") // Subjecte
-							.getBytes());
-					cmp = ctr.getString(ctr.getColumnIndex("comentari"));
-					cmp = cmp.replace(';', ',').replace('\n', '\t');
-
-					cap.write((cmp + ";")
-							.getBytes());
-					cap.write((ctr.getString(ctr.getColumnIndex("entrega_mati")) + ";")
-							.getBytes());
-					cap.write((ctr.getString(ctr.getColumnIndex("recullen")) + ";")
-							.getBytes());
-					cap.write((Utilitats.getString(ctr, "agents") + ";")
-							.getBytes());
-					cap.write((Utilitats.getString(ctr, "hora") + ";")
-							.getBytes());
-
-					cap.write("N;56.700001;0;0;0;0;0;0;0;0;0;0;0;56.7;N;N;11:17;0;0;;-1;\n"
-							.getBytes());
-
-				} while (ctr.moveToNext() == true);
-			}
-			ctr.close();
-
-			numLin = 0;
-			String doc = "";
-			sql = "select Linia.* from Linia LEFT OUTER JOIN Cap on Cap._id = Linia.docum where Cap.state =  'F' ";
-			ctr = helper.execSQL(sql);
-			if (ctr.getCount() > 0) {
-				progressPos = ctr.getCount();
-				ctr.moveToFirst();
-				do {
-
-					String doc1 = ctr.getString(ctr.getColumnIndex("docum"));
-					if (doc == null || doc.length() < 1)
-						doc = doc1;
-					if (doc.equals(doc1) == false) {
-						doc = doc1;
-						numLin = 0;
-					}
-
-					setProgres(progressPos * numLin++, 0);
-					det.write("10;A;".getBytes());
-					det.write((serie + ";").getBytes());
-					det.write((ctr.getString(ctr.getColumnIndex("docum")) + ";") // Document
-							.getBytes());
-					det.write((newDate + ";").getBytes());
-					det.write((Integer.toString(+numLin) + ";").getBytes()); // 5-Numero
-																				// de
-																				// Linia
-					det.write((ctr.getString(ctr.getColumnIndex("article")) + ";")
-							.getBytes());
-					String quant = ctr.getString(ctr.getColumnIndex("quant"));
-					if (quant != null)
-						quant.replace(',', '.');
-					String preu = ctr.getString(ctr.getColumnIndex("preu"));
-					if (preu != null)
-						preu.replace(',', '.');
-					String dte = ctr.getString(ctr.getColumnIndex("dte"));
-					if (dte != null)
-						dte.replace(',', '.');
-
-					det.write((ctr.getString(ctr.getColumnIndex("tipdte")) + ";")
-							.getBytes());
-					det.write((quant + ";").getBytes());
-					det.write((dte + ";").getBytes());
-
-					// double p = ctr.getFloat(ctr.getColumnIndex("preu"));
-					det.write((preu + ";;'X$$';") // 7-Quantitat
-							.getBytes());
-					det.write((ctr.getString(ctr
-							.getColumnIndex("article_regal")) + ";").getBytes());
-					det.write((ctr.getString(ctr.getColumnIndex("preu_regal")) + ";")
-							.getBytes());
-					det.write((ctr.getString(ctr
-							.getColumnIndex("quantitat_regal")) + ";")
-							.getBytes());
-
-					String obs = ctr.getString(ctr.getColumnIndex("notes"));
-					obs = obs.replace(';',',').replace('\n','\t');
-
-					// Compte!!!. Preu sense dte.
-					det.write((preu + ";") // 7-preu
-							.getBytes());
-					det.write("N;N;".getBytes());
-					det.write((obs + ";") // Observacions
-							.getBytes());
-					det.write((ctr.getString(ctr.getColumnIndex("codi_obs")) + ";")
-							.getBytes());
-					det.write((ctr.getString(ctr.getColumnIndex("matricula")) + ";")
-							.getBytes());
-					det.write((ctr.getString(ctr.getColumnIndex("marca")) + ";")
-							.getBytes());
-					det.write((ctr.getString(ctr.getColumnIndex("model")) + ";")
-							.getBytes());
-					det.write((ctr.getString(ctr.getColumnIndex("time_ini")) + ";")
-							.getBytes());
-					String cs  = ctr.getString(ctr.getColumnIndex("matricula"));
-					String cmp = Utilitats.getString(ctr,"loc_ini");
-//					String cmp = URLEncoder.encode(cms, "UTF-8");
-//					Charset iso88591charset = Charset.forName("ISO-8859-1");
-//					String cmp = new String(cms.getBytes(),  StandardCharsets.UTF_8);
-					cmp = cmp.replace(';', ',').replace('\n','\t');
-					det.write((cmp + ";").getBytes());
-					det.write(((Utilitats.getString(ctr, "geo_lng_ini")) + ";")
-							.getBytes());
-					det.write((Utilitats.getString(ctr, "geo_lat_ini") + ";")
-							.getBytes());
-					det.write((Utilitats.getString(ctr, "butlleti") + ";")
-							.getBytes());
-
-					det.write("0;UM;0;0;\n".getBytes());
-
-				} while (ctr.moveToNext() == true);
-			}
-			ctr.close();
-
-			ctr = helper.execSQL("select * from Comptadors");
-			if (ctr.getCount() > 0) {
-				ctr.moveToFirst();
-				do {
-					ctd.write("10;A;;;;;;".getBytes());
-					ctd.write((ctr.getString(ctr.getColumnIndex("cca")).trim() + ";;;") // Document
-							.getBytes());
-					ctd.write((ctr.getInt(ctr.getColumnIndex("cca")) + ";;;") // Document
-							.getBytes());
-					ctd.write(";;;;;;;;;;\n".getBytes());
-
-				} while (ctr.moveToNext() == true);
-			} else
-				ctd.write("10;A;;;;;;0;;;0;;;;;;;\n".getBytes());
-
-			ctr.close();
-
-			// Ara gravem el fitxer de control un cop ja em gravat tots els
-			// altres.
-
-			String fitx = Utilitats.getWorkFolder(act, Utilitats.EXPORT)
-					.getAbsolutePath() + "/oks_" + s;
-			FileOutputStream foks = new FileOutputStream(fitx);
-			foks.write("oks".getBytes());
-			foks.close();
-			taula[3] = fitx;
+//			GeneraFitxerCsv(helper, sql, "CAPCALER", cap);
+			sql = "select * from Cap where Cap.tipus like 'AF%' AND Cap.state =  'F' ";
+			GeneraFitxerCsv(helper, sql, "CAPCALER", cap);
+//			sql = "select Cap.Client,Cap.data,Cap.operari,Cap.Tipus_Exp,Cap.Doc_Exp,Linia.* from Linia LEFT OUTER JOIN Cap on Cap.docum = Linia.docum where Cap.state =  'F' ";
+			sql = "select Cap.Tipus,Cap.doc_ordre,Linia.docum,unic_origen,Cap.parent,Cap.Data,Cap.Operari,Cap.client subaux,Linia.* from Linia LEFT OUTER JOIN Cap on Cap.docum = Linia.docum where Cap.tipus like 'AF%' AND Cap.state =  'F' ";
+			GeneraFitxerCsv(helper, sql, "MOVIMENT", cap);
+			cap.close();
 		} catch (IOException e) {
 			Utilitats.ShowModal(act,e.getMessage());
-		}
-
-		try {
-			helper.close();
-			if (cap != null)
-				cap.close();
-			if (det != null)
-				det.close();
-			if (ctd != null)
-				ctd.close();
-		} catch (IOException e) {
-			Utilitats.ShowModal(act,e.getMessage());
-		}
-
-		try {
-			fitxerClients = GeneraFitxerCsv(helper, "select * from Clients", "cli", s);
-		} catch (IOException e) {
-			Utilitats.ShowModal(act,e.getMessage());
+			return;
 		}
 
 		setProgres(0, ExportCsv.FI_EXPORTACIO); // Tancar progress bar
 		if (perSD != "S") {
-			enviar(taula,fitxerClients);
-			comprovar(fitxer);
+			enviar(new String[] { pathFile} );
+			comprovar(new String[] { fitxer});
 		}
 		marcar();
 		Utilitats.ShowModal(act,"Procés Finalitzat");

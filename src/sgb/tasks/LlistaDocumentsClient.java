@@ -73,9 +73,13 @@ public class LlistaDocumentsClient extends TPlantillaList {
 						.getBaseContext(), ExecTask.class);
 				cursor.moveToPosition(position);
 				Utilitats.inicialitzaPrecomandes(helper, null);
-				String param = cursor.getString(cursor.getColumnIndex("_id"));
+				String tipus = cursor.getString(cursor.getColumnIndex("tipus"));
+				String param = cursor.getString(cursor.getColumnIndex("docum"));
+
 				ClientsPerRutaIntent.putExtra("parametre1", client);
 				ClientsPerRutaIntent.putExtra("parametre2", param);
+				ClientsPerRutaIntent.putExtra("tipus", tipus);
+
 				ClientsPerRutaIntent.putExtra("programa", "Cap");
 				getAct().startActivity(ClientsPerRutaIntent);
 			}

@@ -11,6 +11,7 @@ import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.SQLException;
 import android.database.sqlite.SQLiteConstraintException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -19,9 +20,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.CursorAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -78,13 +81,22 @@ public abstract class TPlantillaList extends TPlantilla {
 	protected View row;
 	protected Boolean autoShow;
 	protected Boolean swActivate;
+	protected Button butDataInc,butDataDec;
+	protected TextView data;
+	protected LinearLayout dataLayout;
+
 
 	abstract int getRowViewId();
 
 
 	public void OnPopulate(Cursor c,View v)
 	{
-		
+
+	}
+
+	public void OnClickBoto(Cursor c,View v)
+	{
+
 	}
 
 	
@@ -173,6 +185,12 @@ public abstract class TPlantillaList extends TPlantilla {
 		LayoutInflater inflater = (LayoutInflater) getContext()
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		view = inflater.inflate(R.layout.tplantillalist, null);
+		butDataInc = (Button)view.findViewById(R.id.tplant_inc_data);
+		butDataInc.setOnClickListener(this);
+		butDataDec = (Button)view.findViewById(R.id.tplant_dec_data);
+		data = (TextView)view.findViewById(R.id.tplant_data);
+		butDataDec.setOnClickListener(this);
+		dataLayout = (LinearLayout)view.findViewById(R.id.tplant_datalayout);
 
 		addView(view);
 		camps = new TFormFields(helper, view);
@@ -189,8 +207,15 @@ public abstract class TPlantillaList extends TPlantilla {
 
 	public void runSQL() {
 		String sql = camps.getSqlList();
+		int s=0;
+		try {
 		cursor = helper.execSQL(sql);
-		int s = cursor.getCount();
+		s = cursor.getCount();
+		} catch (SQLException e) {
+			Utilitats.Toast(act,e.getMessage());
+		}
+
+
 		/*
 		 * Esborrar !!! int r = cursor.getColumnCount();
 		 * 
@@ -201,7 +226,13 @@ public abstract class TPlantillaList extends TPlantilla {
 		 * }
 		 */
 
-		// act.startManagingCursor(cursor);
+/*		if (s > 0) {
+			cursor.moveToFirst();
+			String st = cursor.getString(cursor.getColumnIndex("_id"));
+			long st1 = cursor.getLong(cursor.getColumnIndex("_id"));
+			String st12 = cursor.getString(cursor.getColumnIndex("_id"));
+		} */
+ 		// act.startManagingCursor(cursor);
 		Context t = this.getContext();
 		adapter = new DetailsAdapter(this, cursor);
 		list.setAdapter(adapter);
@@ -336,6 +367,26 @@ public abstract class TPlantillaList extends TPlantilla {
 						}
 					});
 
+				int n = v.getId();
+				int s =  R.id.listrow_boto_comptador;
+				if (v.getId() == R.id.listrow_boto_comptador)
+				{
+					v.setOnClickListener(new View.OnClickListener() {
+
+						@Override
+						public void onClick(View v) {
+							Cursor cs = adapter.getCursor();
+							cs.moveToPosition(position);
+							OnClickBoto(cs,view);
+							// Toast.makeText(v.getContext(),
+							// " Has tocat imatge : "+position+" : "+cs.getString(cs.getColumnIndex("descripcio")),
+							// Toast.LENGTH_SHORT).show();
+
+						}
+
+					});
+
+				}
 				if (v instanceof ImageView) {
 					String st = c.getString(c.getColumnIndex(camps.get(i)));
 					ImageView vs = (ImageView) v;
@@ -450,7 +501,7 @@ public abstract class TPlantillaList extends TPlantilla {
 					TextView vs = (TextView) v;
 					
 					vs.setText(st);
-//					vs.setPaintFlags(/* vs.getPaintFlags() | */getPaint(c));
+					vs.setPaintFlags(/* vs.getPaintFlags() | */getPaint(c));
 				}
 
 			}

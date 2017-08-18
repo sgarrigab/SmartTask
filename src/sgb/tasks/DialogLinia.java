@@ -32,6 +32,7 @@ public class DialogLinia extends Dialog implements OnClickListener,
 		OnReturnEvent {
 	String PROGRAMA = "DialogLinia";
 	String taula;
+	String wtipus;
 	Double preuFinal;
 	Spinner obs_lin;
 
@@ -39,6 +40,7 @@ public class DialogLinia extends Dialog implements OnClickListener,
 	Double lat_ini, lng_ini;
 
 	TFormField fObs_lin;
+	TFormField fObs_vehicle;
 
 	String idLinia;
 	Button gravar;
@@ -70,10 +72,9 @@ public class DialogLinia extends Dialog implements OnClickListener,
 	protected boolean gps_enabled, network_enabled;
 
 	TextView format;
-	SGEdit quantitat, stock, preu, preutarifa, tipdte, dte, descripcio, total,
+	SGEdit codiserie ,quantitat, stock, preu, preutarifa, tipdte, dte, descripcio, total,
 			article, notes, quantitatRegal, articleRegal, descripcioRegal,
-			time_inici,  lloc_inici, linies_matricula,
-			linies_marca, linies_model, linies_butlleti;
+			time_inici,  lloc_inici;
 
 	TPreus tmpPreus = new TPreus();
 
@@ -160,20 +161,13 @@ public class DialogLinia extends Dialog implements OnClickListener,
 			tmpPreus.preuBase = cursor.getFloat(cursor.getColumnIndex("preu"));
 			tmpPreus.tipDte = cursor.getString(cursor.getColumnIndex("tipdte"));
 			article.setText(cursor.getString(cursor.getColumnIndex("article")));
+			descripcio.setText(cursor.getString(cursor.getColumnIndex("descripcio")));
+            codiserie.setText(cursor.getString(cursor.getColumnIndex("codiserie")));
 
 			time_inici.setText(cursor.getString(cursor
 					.getColumnIndex("time_ini")));
 			lloc_inici.setText(cursor.getString(cursor
 					.getColumnIndex("loc_ini")));
-			linies_matricula.setText(cursor.getString(cursor
-					.getColumnIndex("matricula")));
-			linies_marca.setText(cursor.getString(cursor
-					.getColumnIndex("marca")));
-			linies_model.setText(cursor.getString(cursor
-					.getColumnIndex("model")));
-			linies_butlleti.setText(cursor.getString(cursor
-					.getColumnIndex("butlleti")));
-//			agents.setText(cursor.getString(cursor.getColumnIndex("agents")));
 
 			tmpPreus.quantitatRegal = cursor.getFloat(cursor
 					.getColumnIndex("quantitat_regal"));
@@ -182,9 +176,10 @@ public class DialogLinia extends Dialog implements OnClickListener,
 			notes.setText(cursor.getString(cursor.getColumnIndex("notes")));
 			quantitat.setText(new DecimalFormat("####0.00###")
 					.format(tmpPreus.quantitat));
-			linies_matricula.requestFocus();
 			this.fObs_lin.setValue(cursor.getString(cursor
 					.getColumnIndex("codi_obs")));
+			this.fObs_vehicle.setValue(cursor.getString(cursor
+					.getColumnIndex("codi_vehicle")));
 
 			return true;
 		} else
@@ -202,7 +197,7 @@ public class DialogLinia extends Dialog implements OnClickListener,
 				android.text.format.DateFormat df = new android.text.format.DateFormat();
 				time_inici.setText(df.format("HH:mm", new java.util.Date()));
 
-				Utilitats.InicialitzaGps(0);
+//				Utilitats.InicialitzaGps(0);
 			}
 
 		}
@@ -226,6 +221,7 @@ public class DialogLinia extends Dialog implements OnClickListener,
 		wsubjecte = prefs.getString("codi_cli", "");
 		wdescripcio = prefs.getString("desc_cli", "");
 		wdocument = prefs.getString("document", "");
+		wtipus = prefs.getString("tipus", "");
 
 		this.id = id;
 		prefs.close();
@@ -240,13 +236,9 @@ public class DialogLinia extends Dialog implements OnClickListener,
 		startIniGps = (Button) findViewById(R.id.linies_ini_gps);
 		startIniGps.setOnClickListener(this);
 
-		endIniGps = (Button) findViewById(R.id.linies_delete_ini_gps);
-		endIniGps.setOnClickListener(this);
 
-		linies_matricula = (SGEdit) findViewById(R.id.linies_matricula);
-		linies_marca = (SGEdit) findViewById(R.id.linies_marca);
-		linies_model = (SGEdit) findViewById(R.id.linies_model);
-		linies_butlleti = (SGEdit) findViewById(R.id.linies_butlleti);
+
+
 		time_inici = (SGEdit) findViewById(R.id.time_inici);
 		lloc_inici = (SGEdit) findViewById(R.id.lloc_inici);
 //		agents = (SGEdit) findViewById(R.id.agents);
@@ -254,19 +246,30 @@ public class DialogLinia extends Dialog implements OnClickListener,
 		article = (SGEdit) findViewById(R.id.linies_article);
 		// format = (TextView) findViewById(R.id.linies_format);
 		descripcio = (SGEdit) findViewById(R.id.linies_descripcio);
-		quantitat = (SGEdit) findViewById(R.id.linies_quantitat);
+        quantitat = (SGEdit) findViewById(R.id.linies_quantitat);
+        codiserie = (SGEdit) findViewById(R.id.linies_numserie);
+		quantitat.setText("1");
+
 		quantitatRegal = (SGEdit) findViewById(R.id.quantitat_regal);
 		descripcioRegal = (SGEdit) findViewById(R.id.descripcio_regal);
 		articleRegal = (SGEdit) findViewById(R.id.article_regal);
 		articleRegal.setOnClickListener(this);
+		try {
+			fObs_vehicle = new TFormField("codi_vehicle",
+					findViewById(R.id.spin_lin_vehicle));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		try {
 			fObs_lin = new TFormField("codi_obs",
 					findViewById(R.id.spin_lin_obs));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		fObs_lin.setSqlLink("SELECT clau _id, descripcio FROM TAULES WHERE TAULA = 'OPE' order BY descripcio");
+		fObs_lin.setSqlLink("SELECT clau _id, descripcio FROM TAULES WHERE TAULA = 'INF' order BY descripcio");
 		fObs_lin.LoadSpinner(this.getContext(), ahelper);
+		fObs_vehicle.setSqlLink("SELECT clau _id, descripcio FROM TAULES WHERE TAULA = 'INF' order BY descripcio");
+		fObs_vehicle.LoadSpinner(this.getContext(), ahelper);
 
 		quantitat.setOnEditorActionListener(onEditor);
 
@@ -405,15 +408,13 @@ public class DialogLinia extends Dialog implements OnClickListener,
 				warticle, wFamilia, wLinia, wQuantitat);
 
 		Utilitats.readArticles(helper, warticle, tmpPreus);
-		if (id != 0)
-			printPreus(tmpPreus);
-		else
-			printPreus(preus);
 
 		Cursor cursorArt = Utilitats.getCursorArt();
-		descripcio.setText(cursorArt.getString(cursorArt
-				.getColumnIndex("descripcio")));
-		// format.setText(cursorArt.getString(cursorArt.getColumnIndex("format")));
+		if (id == 0) {
+			descripcio.setText(cursorArt.getString(cursorArt
+					.getColumnIndex("descripcio")));
+		}
+//		   format.setText(cursorArt.getString(cursorArt.getColumnIndex("format")));
 
 		regal = (Button) findViewById(R.id.linies_regal);
 		regal = (Button) findViewById(R.id.linies_regal);
@@ -482,9 +483,9 @@ public class DialogLinia extends Dialog implements OnClickListener,
 		});
 			quantitat.requestFocus();
 			if (lat_ini == null || lat_ini <= 0.0) {
-				Utilitats.InicialitzaGps(1);
-				Intent it = new Intent(act, Gps.class);
-				act.startActivity(it);
+//				Utilitats.InicialitzaGps(1);
+//				Intent it = new Intent(act, Gps.class);
+//				act.startActivity(it);
 			}
 
 		}
@@ -503,9 +504,13 @@ public class DialogLinia extends Dialog implements OnClickListener,
 			ContentValues cv = new ContentValues();
 
 			// cv.put("_id", idLinia);
+			cv.put("tipus", wtipus);
 			cv.put("docum", wdocument);
+			cv.put("codi_vehicle", this.fObs_vehicle.getValue());
+
 			cv.put("codi_obs", this.fObs_lin.getValue());
 			cv.put("article", article.getText().toString());
+			cv.put("descripcio", descripcio.getText().toString());
 			cv.put("quant", tmpPreus.quantitat);
 			cv.put("dte", tmpPreus.dte);
 			cv.put("tipdte", tmpPreus.tipDte);
@@ -513,15 +518,12 @@ public class DialogLinia extends Dialog implements OnClickListener,
 			cv.put("time_ini", time_inici.getText().toString());
 			cv.put("loc_ini", lloc_inici.getText().toString());
 //			cv.put("agents", agents.getText().toString());
-			cv.put("matricula", linies_matricula.getText().toString());
-			cv.put("marca", linies_marca.getText().toString());
-			cv.put("model", linies_model.getText().toString());
-			cv.put("butlleti", linies_butlleti.getText().toString());
 
 			cv.put("geo_lng_ini", lng_ini);
 			cv.put("geo_lat_ini", lat_ini);
 
-			cv.put("preu", tmpPreus.preuBase);
+            cv.put("codiserie", codiserie.getText().toString());
+            cv.put("preu", tmpPreus.preuBase);
 			cv.put("preunet", tmpPreus.preuNet);
 			cv.put("quantitat_regal", tmpPreus.quantitatRegal);
 			cv.put("article_regal", tmpPreus.articleRegal);
@@ -535,6 +537,7 @@ public class DialogLinia extends Dialog implements OnClickListener,
 			cv.put("notes", notes.getText().toString());
 			try {
 				if (id == 0) {
+					cv.put("servir",tmpPreus.quantitat);
 					id = helper.getWritableDatabase().insertOrThrow(
 							"Linia", "_id", cv);
 					if (id < 0)
@@ -643,15 +646,15 @@ public class DialogLinia extends Dialog implements OnClickListener,
 		}
 		if (v == endIniGps) {
 
-			Utilitats.InicialitzaGps(0);
+//			Utilitats.InicialitzaGps(0);
 			lat_ini = lng_ini = 0.0;
 			lloc_inici.setText("");
 
 		}
 		if (v == startIniGps) {
-			Utilitats.InicialitzaGps(1);
-			Intent it = new Intent(act, Gps.class);
-			act.startActivity(it);
+//			Utilitats.InicialitzaGps(1);
+//			Intent it = new Intent(act, Gps.class);
+//			act.startActivity(it);
 
 		}
 

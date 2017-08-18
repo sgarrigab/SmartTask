@@ -22,6 +22,7 @@ public class DialogError extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		extras = getIntent().getExtras();
 		String msg;
+		setContentView(R.layout.dialogerror);
 		if (extras != null) {
 			msg = extras.getString("MsgError");
 			if (msg != null) {
@@ -31,7 +32,6 @@ public class DialogError extends Activity implements OnClickListener {
 				
 		}
 		
-		setContentView(R.layout.dialogerror);
 		cancel = (Button) findViewById(R.id.cancel);
 		cancel.setOnClickListener(this);
 	}

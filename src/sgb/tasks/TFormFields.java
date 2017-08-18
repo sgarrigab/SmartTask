@@ -124,6 +124,19 @@ public class TFormFields {
 			}
 		}
 	}
+	public void setValue(String camp,String value) {
+		Iterator<TFormField> e = camps.iterator();
+		while (e.hasNext()) {
+			TFormField s = (TFormField) e.next();
+			View v = s.getUIField();
+			if (v instanceof EditText) {
+				if (s.getSqlName().equalsIgnoreCase(camp)) {
+					((EditText) v).setText(value);
+				return;
+				}
+			}
+		}
+	}
 
 	/******************************************************************
 	 * 

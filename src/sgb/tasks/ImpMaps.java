@@ -11,12 +11,25 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.util.Arrays;
+import java.util.Comparator;
+
 public class ImpMaps extends Activity {
 
 	MapTables mapTables = new MapTables();
 
 	String perSD = null;
-	String PROGRAMA = "xImpExp";
+	String PROGRAMA = "ImpExp";
 
 	private ProgressBar progressFtp = null;
 	private ProgressBar progressImp = null;
@@ -80,10 +93,9 @@ public class ImpMaps extends Activity {
 					Boolean load = perSD != null && perSD.equals("S");
 					if (load
 							|| Utilitats.DescarregaConfiguracio(ImpMaps.this) == true) {
-						Utilitats.InicialitzaBBDD(helper);
 						Rebre(perSD);
 						
-						Utilitats.ShowModal(ImpMaps.this,"Importació Finalitzada");
+//						Utilitats.ShowModal(ImpMaps.this,"Importació Finalitzada");
 						finish();
 					}
 				}
@@ -121,33 +133,121 @@ public class ImpMaps extends Activity {
 	public void Rebre(final String perSD) {
 		String pSD = perSD == null ? "N" : perSD;
 
-
-		
-		
-		if (!pSD.equals("S"))
-			DescarregaFitxers(pSD);
-
-		// Descarrega Imatges
-
-
-		for (final Taules tb : mapTables.getTaules()) {
-			Csv2Sqlite sq = new Csv2Sqlite(tb);
-			progressImp.setMax(sq.ImportCount(tb.getKey(), ImpMaps.this));
-			Msg(tb.getKey());
-			sq.ImportFile(tb.getKey(), tb.getValue(), helper, ImpMaps.this,
-					new NotifCsv());
-
-		} 
-
-		String dir = Utilitats.getWorkFolder(this, Utilitats.IMAGES)
-				.getAbsolutePath();
-		
 		FTPTransferListener listener = new FTPTransferListener(progressFtp,
 				len, handler);
+		mapTables.Load(Utilitats.getWorkFolder(this, Utilitats.CONFIG) + "/"
+				+ "import.properties");
 
-		Utilitats.DescarregaImatges(ImpMaps.this,listener);
-		
-		
+		Prefs prefs = Prefs.getInstance(getApplicationContext());
+		String carpeta = prefs.getString("ftpFolder", "");
+		prefs.close();
+
+		int NumFiles = Utilitats.DescarregaFitxers(this,carpeta,"*.PC",listener,true);
+
+		String Folder = Utilitats.getWorkFolder(this, Utilitats.WORK).getAbsolutePath();
+		String FolderImp = Utilitats.getWorkFolder(this, Utilitats.IMPORT).getAbsolutePath();
+		File f=new File(FolderImp);
+		File fileNames[] = f.listFiles();
+
+		/* Ordenem per Nom ja que està per data */
+		if (fileNames != null && fileNames.length > 1) {
+			Arrays.sort(fileNames, new Comparator<File>() {
+				@Override
+				public int compare(File object1, File object2) {
+					return object1.getName().compareTo(object2.getName());
+				}
+			});
+		}
+
+		for (File file : fileNames) {
+			Utilitats.InicialitzaBBDD(helper);
+			String fs = file.getName();
+			if(!file.isDirectory() && file.getName().endsWith(".PC"))
+			{
+				Utilitats.EsborrarDirectori(Utilitats.getWorkFolder(this, Utilitats.WORK));
+				InputStream input = null;
+
+				File archivo = null;
+				FileReader fr = null;
+				BufferedReader br = null;
+				Boolean headers=true;
+
+				try {
+
+					archivo = new File(FolderImp+"/"+fs);
+			//		fr = new FileReader(archivo);
+			//		br = new BufferedReader(fr);
+
+					br = new BufferedReader(new InputStreamReader(new
+							FileInputStream(FolderImp+"/"+fs), "ISO-8859-1"));
+
+
+					String linea;
+					Taules act = null;
+					BufferedWriter out = null;
+					while ((linea = br.readLine()) != null) {
+						if (linea.length() > 3
+								&& linea.substring(0, 3).equals("</@") == true) {
+							out.close();
+							out = null;
+						} else
+						if (linea.length() > 3
+								&& linea.substring(0, 2).equals("<@") == true) {
+							int p = linea.indexOf(">");
+							if (p > 3) {
+								String Fitxer = linea.substring(2,p);
+								try
+								{
+									FileWriter fstream = new FileWriter(Folder+"/"+Fitxer+".TMP", false);
+									out = new BufferedWriter(fstream);
+								} catch (IOException e)
+								{
+									System.err.println("Error: " + e.getMessage());
+								}
+							}
+						}
+						else
+						{
+							out.write(linea+"\n");
+						}
+
+					}
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					try {
+						if (null != fr) {
+							fr.close();
+						}
+					} catch (Exception e2) {
+						e2.printStackTrace();
+					}
+				}
+
+				for (final Taules tb : mapTables.getTaules()) {
+					File fp = new File(Folder+"/"+tb.getKey()+".TMP");
+					if (fp.exists()) {
+						Csv2Sqlite sq = new Csv2Sqlite(tb);
+						progressImp.setMax(sq.ImportCount(tb.getKey(), ImpMaps.this));
+						Msg(tb.getKey());
+						sq.ImportFile(tb.getKey(), tb.getValue(), helper, ImpMaps.this,
+								new NotifCsv());
+					}
+
+				}
+
+			}
+		}
+
+		/* Esborrem els fitxers Importats */
+		for (File file : fileNames) {
+			String fs = file.getName();
+			if (!file.isDirectory() && file.getName().endsWith(".PC"))
+				file.delete();
+		}
+
+
 		Msg("Procés Finalitzat");
 
 	}

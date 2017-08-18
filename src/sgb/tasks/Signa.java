@@ -119,12 +119,12 @@ public class Signa extends Activity
         int position = 0;
         if (extras != null) {
             wdocument = extras.getString("document");
-            DecimalFormat formatter = new DecimalFormat("00000000_");
-            document = Integer.parseInt(wdocument);
-            wdocument = formatter.format(document);
+//            DecimalFormat formatter = new DecimalFormat("00000000_");
+//            document = Integer.parseInt(wdocument);
+//            wdocument = formatter.format(document);
         }
 
-        NomSignFile = Utilitats.getWorkFolder(Signa.this, Utilitats.FOTOS).getAbsolutePath()+"/_"+wdocument + "_sgn.jpg";
+        NomSignFile = Utilitats.getWorkFolder(Signa.this, Utilitats.FOTOS).getAbsolutePath()+"/"+wdocument + "_sgn.jpg";
         SignFile = new File(NomSignFile);
 
         BitmapFactory.Options options = new BitmapFactory.Options();

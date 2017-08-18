@@ -1,7 +1,6 @@
 package sgb.tasks;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.support.v4.widget.SimpleCursorAdapter;
@@ -69,11 +68,20 @@ public class LlistaDocumentPendents extends TPlantillaList {
 
 		});
 		User.setAdapter(qc);
+		int Current=-1;
+		int Pos = 0;
+		CurrentUser = Utilitats.getCurrentUser(act);
 		if (c.moveToFirst()) {
 			do {
+				String sr = c.getString(0);
 				spinFields.add(c.getString(0));
+				if (c.getString(0).equalsIgnoreCase(CurrentUser))
+					Current=Pos;
+				Pos++;
 			} while (c.moveToNext());
 		}
+		if (Current >= 0)
+			User.setSelection(Current);
 
 
 
@@ -82,12 +90,12 @@ public class LlistaDocumentPendents extends TPlantillaList {
 	public void runSQL() {
 		CurrentUser = Utilitats.getCurrentUser(getContext());
 		String wDat = formatMDY.format(dataMov.getTime());
-		String Sql = "select Cap.tipus,Cap.docum,Cap._id,data dataf,Cap.client,nom,Cap.state from Cap  left join Clients on (Clients.subjecte = Cap.client) " +
+		String Sql = "select Cap.tipus,Cap.docum,Cap._id,data dataf,Cap.client,Cap.nom,Cap.state from Cap  left join Clients on (Clients.subjecte = Cap.client) " +
 				" where "+Situacio + " and operari = '"+CurrentUser+"' ";
 		if (DataDia)
 			Sql +=  " and data = '"+wDat+"' ";
 
-		Sql += "order by Data ";
+		Sql += "order by Data,hora ";
 
 	//	Sql += " and "+Situacio ;
 	//	Sql += " order by data desc ";

@@ -12,7 +12,7 @@ public class ServeiLoadBoot extends BroadcastReceiver {
 		// LANZAR SERVICIO
 		Intent serviceIntent = new Intent(context, ServeiBoot.class);
 		// startService(svc);
-		// serviceIntent.setAction("sgb.service.orders.Servei");
+		// serviceIntent.setAction("sgb.service.tasks.Servei");
 		context.startService(serviceIntent);
 
 		// LANZAR ACTIVIDAD

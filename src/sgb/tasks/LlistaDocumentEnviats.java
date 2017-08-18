@@ -23,18 +23,18 @@ public class LlistaDocumentEnviats extends TPlantillaList {
 		this.getCamps().setKey("_id");
 		this.getCamps()
 				.setSqlList(
-				// "select *,L.subjecte from Cap  LEFT JOIN Clients L ON L.subjecte = subjecte where State <> 'E' ");
-						"select strftime('%d-%m-%Y', data) dataf,* from Cap  left join Clients on (Clients.subjecte = Cap.client) where Cap.state = 'E' order by data desc ");
+						// "select *,L.subjecte from Cap  LEFT JOIN Clients L ON L.subjecte = subjecte where State <> 'E' ");
+						"select strftime('%d-%m-%Y', data) dataf,* from Cap  left join Clients on (Clients.subjecte = Cap.client) where Cap.state = 'E' order by data desc,parent ");
 
 		this.getCamps().getCamps()
-				.add(new TFormField("nom", R.id.listrow_text1));
+				.add(new TFormField("Cap.nom", R.id.listrow_text1));
 		this.getCamps().getCamps()
-				.add(new TFormField("hora", R.id.listrow_text2));
+				.add(new TFormField("dataf", R.id.listrow_text2));
 		this.getCamps().getCamps()
-				.add(new TFormField("Cap._id", R.id.listrow_text4));
+				.add(new TFormField("value", R.id.listrow_text4));
 		list.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
+									int position, long id) {
 
 				Intent ClientsPerRutaIntent = new Intent(getAct()
 						.getBaseContext(), ExecTask.class);

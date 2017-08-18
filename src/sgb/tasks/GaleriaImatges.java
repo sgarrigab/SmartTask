@@ -57,8 +57,8 @@ public class GaleriaImatges extends Activity {
 		int position = 0;
 		if (extras != null) {
 			document = extras.getString("document");
-			DecimalFormat formatter = new DecimalFormat("_00000000_");
-			document = formatter.format(Integer.parseInt(document));
+//			DecimalFormat formatter = new DecimalFormat("_00000000_");
+//			document = formatter.format(Integer.parseInt(document));
 		}
 
 		gallery = (Gallery) findViewById(R.id.gallery1);
@@ -105,7 +105,7 @@ public class GaleriaImatges extends Activity {
 		// Create an image file name
 		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss")
 				.format(new Date());
-		String imageFileName = document + /*timeStamp + */ "_pic_";
+		String imageFileName = document + /*timeStamp + */ "_pic";
 		File storageDir = Utilitats.getWorkFolder(this, Utilitats.FOTOS);
 
 		File image = File.createTempFile(imageFileName, /* prefix */

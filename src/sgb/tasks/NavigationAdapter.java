@@ -133,6 +133,22 @@ public class NavigationAdapter extends BaseAdapter {
 
 					}
 
+					else if (Titol.startsWith("Backup")) {
+						Utilitats.CopiaBBDD(activity);
+					}
+					else if (Titol.startsWith("Configu")) {
+						new DialogPreferences(activity, activity).show();
+
+					}
+					else if (Titol.startsWith("Inicialitza")) {
+						Utilitats.inicialitzaBBDD(activity);
+
+					}
+					else if (Titol.startsWith("Neteja")) {
+						Utilitats.NetejaEnviats(activity);
+
+					}
+
 					if (Titol.equalsIgnoreCase("COMPARTIR")) {
 						if (camera == null) {
 							PackageManager pm = activity.getPackageManager();
