@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\gestions\Apps\SmartTask\libs\android-support-v4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf">
+        <dex dex="C:\gestions\Apps\SmartTask\build\intermediates\pre-dexed\debug\android-support-v4_38ade19b140671260d24ee1ab8a9b921366ade76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\gestions\Apps\SmartTask\libs\javacsv.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="afed46cadd463453bbf007625ecfa3afac097f37">
+        <dex dex="C:\gestions\Apps\SmartTask\build\intermediates\pre-dexed\debug\javacsv_12586bb45d8ca7d3dedf6e020cd0e6dab3e22013.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\gestions\Apps\SmartTask\libs\ftp4j-1.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d44499aaf10c97c6b4039e8fdd3d4b10c5da73f9">
+        <dex dex="C:\gestions\Apps\SmartTask\build\intermediates\pre-dexed\debug\ftp4j-1.6.1_f79f27af6f9f43728fc94d22e6df2d4a543de541.jar" />
+    </item>
+
+</items>

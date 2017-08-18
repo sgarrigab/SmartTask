@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#4169e1"
+        android:orientation="vertical" >
+
+        <include layout="@layout/botons" />
+        <LinearLayout
+            android:id="@+id/tplant_datalayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c1cdc1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="1"
+            android:gravity="center">
+            <Spinner
+                android:id="@+id/spin_userdoc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:prompt="@+id/situacioCap" />
+
+            <Button
+                android:id="@+id/tplant_dec_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chevron_left_black_24dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tplant_data"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="01/12/2016"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:selectAllOnFocus="true"
+                android:visibility="visible"
+                android:gravity="center_vertical" />
+
+            <Button
+                android:id="@+id/tplant_inc_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chevron_right_black_24dp"
+                android:visibility="visible"
+                android:gravity="right|center_vertical|center_horizontal" />
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c1cdc1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tplant_querybut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/search_48"
+                android:visibility="gone" />
+
+            <sgb.tasks.SGEdit
+                android:id="@+id/tplant_querycamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/tplant_querybut"
+                android:gravity="center_vertical"
+                android:imeOptions="actionSearch"
+                android:inputType="textAutoComplete"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/tplantillalist_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="7"
+            android:background="@color/black"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone" >
+
+            <!-- -            android:background="@drawable/taques" -->
+            />
+        </ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+
+        android:textSize="24sp" />
+
+</FrameLayout>

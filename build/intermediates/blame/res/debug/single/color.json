@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\color\\text_wh_regular.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\color\\text_wh_regular.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\color\\text_bl_regular.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\color\\text_bl_regular.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\color\\text_wh_large.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\color\\text_wh_large.xml"
+    }
+]

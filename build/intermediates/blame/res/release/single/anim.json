@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\anim\\flipin.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipin.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\anim\\flipout_reverse.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipout_reverse.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\anim\\flipout.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipout.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\anim\\flipin_reverse.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipin_reverse.xml"
+    }
+]

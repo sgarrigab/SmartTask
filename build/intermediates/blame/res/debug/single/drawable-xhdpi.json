@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_arrow_forward_black_24dp.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xhdpi\\ic_arrow_forward_black_24dp.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\stat_sys_gps_on.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xhdpi\\stat_sys_gps_on.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_keyboard_arrow_left_black_24dp.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xhdpi\\ic_keyboard_arrow_left_black_24dp.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_keyboard_arrow_right_black_24dp.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xhdpi\\ic_keyboard_arrow_right_black_24dp.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_chevron_right_black_24dp.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xhdpi\\ic_chevron_right_black_24dp.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_chevron_left_black_24dp.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xhdpi\\ic_chevron_left_black_24dp.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_arrow_back_black_24dp.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xhdpi\\ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_menu_camera.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xhdpi\\ic_menu_camera.png"
+    }
+]

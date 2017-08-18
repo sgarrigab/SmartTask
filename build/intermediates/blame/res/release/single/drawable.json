@@ -1,0 +1,330 @@
+[
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_drawer.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_drawer.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\record.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\record.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\camera.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\camera.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\nuevo2.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\nuevo2.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\button_bl_normal.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_bl_normal.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_back.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_back.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\animated_button1.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\animated_button1.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_action_place.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_place.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ball_red.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ball_red.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\lock.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\lock.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\appico.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\appico.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\button_wh_normal.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_normal.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\satellite2.gif",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\satellite2.gif"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\white_container_bl.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\white_container_bl.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_divider_wh.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_divider_wh.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\hihgcopia.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\hihgcopia.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\boto_cercle.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\boto_cercle.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_help.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_help.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\gray_gradient_background.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gray_gradient_background.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\nuevo.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\nuevo.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\button_wh_selected.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_selected.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_action_event.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_event.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\gradient2_bg.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient2_bg.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\calendar.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\calendar.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\send.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\send.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\back.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_agenda.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_agenda.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\edittext_rounded_corners.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\edittext_rounded_corners.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_action_settings.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_settings.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_action_share.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_share.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ball_green.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ball_green.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\icono.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\icono.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\gradient_bg.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient_bg.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_delete.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_delete.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\checkmark.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\checkmark.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_item_wh.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\save.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\save.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_preferences.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_preferences.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\white_container_wh.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\white_container_wh.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_save.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_save.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\taques.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\taques.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\run.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\run.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\toast.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\toast.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_action_star.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_star.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\notes.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\notes.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_divider_bl.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_divider_bl.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\arrow_left.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\arrow_left.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\image2_bg.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\image2_bg.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_compass.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_compass.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\lock_open.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\lock_open.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\title_bar_wh.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\title_bar_wh.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\icon.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_item_bl.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_bl.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_launcher.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\restaurant.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\restaurant.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\phone.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\phone.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\help.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\help.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_add.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_add.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\search_48.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\search_48.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\users.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\users.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_end_call.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_end_call.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_show_list.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_show_list.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\button_wh.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_action_user.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_user.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\tick.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\tick.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\r96wbv06.bmp",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\r96wbv06.bmp"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\button_bl.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_bl.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\button_wh_pressed.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_pressed.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_selector.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_selector.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_action_labels.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_labels.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_item_wh_pressed.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh_pressed.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\satellite.gif",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\satellite.gif"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\user_icon.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\user_icon.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\image_bg.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\image_bg.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\ic_menu_sorta.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_sorta.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\add.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\add.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\delete.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\delete.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\gradient_bg_hover.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient_bg_hover.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_item_wh_selected.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh_selected.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\podcast.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\podcast.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_selector_linies.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_selector_linies.xml"
+    }
+]
