@@ -42,5 +42,9 @@
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_chevron_left_black_24dp.png",
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-mdpi\\ic_chevron_left_black_24dp.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\play_green.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-mdpi\\play_green.png"
     }
 ]

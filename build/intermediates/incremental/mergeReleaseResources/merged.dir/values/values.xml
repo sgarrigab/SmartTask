@@ -65,11 +65,16 @@
     <attr format="reference" name="whiteBackground"/>
     <color name="background">#3500ffff</color>
     <color name="black">#000000</color>
+    <color name="clicked_btn">#ff751a</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
     <color name="greenEnd">#ff1da130</color>
     <color name="greenMid">#ff0A8815</color>
     <color name="greenStart">#ff33dd44</color>
     <color name="grey_font">#ff9e9e9e</color>
     <color name="light_font">#FBFBFB</color>
+    <color name="logIn_color">#3399ff</color>
     <color name="puzzle_background">#ffe6f0ff</color>
     <color name="puzzle_dark">#6456648f</color>
     <color name="puzzle_foreground">#ff000000</color>
@@ -79,15 +84,26 @@
     <color name="puzzle_hint_2">#2000ff80</color>
     <color name="puzzle_light">#64c6d4ef</color>
     <color name="puzzle_selected">#64ff8000</color>
+    <color name="save_color">#a3a3c2</color>
     <color name="text_shadow">#7F000000</color>
     <color name="text_shadow_white">#FFFFFF</color>
+    <color name="toolbar_color">#C5CAE8</color>
     <color name="transparent_blue">#80004488</color>
     <color name="white">#FFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_small_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="borderDimen">2dp</dimen>
     <dimen name="content_left_margin_bl">8sp</dimen>
     <dimen name="content_left_margin_wh">8sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
     <dimen name="mitja">15sp</dimen>
     <dimen name="page_margin_bl">2sp</dimen>
     <dimen name="page_margin_wh">5sp</dimen>
+    <dimen name="size_big_title">30sp</dimen>
+    <dimen name="size_normal_text">18sp</dimen>
+    <dimen name="size_small_text">16sp</dimen>
+    <dimen name="size_small_title">20sp</dimen>
     <string name="about_label">About</string>
     <string name="app_name">Smart Tasks</string>
     <string name="exit_label">Exit</string>
@@ -238,11 +254,7 @@
     <style name="page_background_bl">
         <item name="android:background">#000</item>
         <item name="android:padding">@dimen/page_margin_bl</item>
-        <!--
- 		<item name="android:layout_marginTop">8dip</item>
- 		<item name="android:layout_marginBottom">20dip</item>
-
-        -->
+        
     </style>
     <style name="page_background_wh">
         <item name="android:background">@drawable/gray_gradient_background</item>

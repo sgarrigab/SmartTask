@@ -36,6 +36,10 @@
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-mdpi\\calendar.png"
     },
     {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\play_green.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-mdpi\\play_green.png"
+    },
+    {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable-mdpi\\icon.png",
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-mdpi\\icon.png"
     },

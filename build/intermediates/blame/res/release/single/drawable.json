@@ -8,12 +8,12 @@
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\record.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\camera.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\camera.png"
-    },
-    {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\nuevo2.png",
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\nuevo2.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\camera.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\camera.png"
     },
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\button_bl_normal.xml",
@@ -46,6 +46,10 @@
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\button_wh_normal.xml",
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_normal.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\plus.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\plus.png"
     },
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\satellite2.gif",
@@ -210,6 +214,10 @@
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\icon.png",
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\minus.png",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\minus.png"
     },
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\drawable\\list_item_bl.xml",

@@ -485,9 +485,9 @@
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 707,
+                        "startOffset": 709,
                         "endColumn": 46,
-                        "endOffset": 749
+                        "endOffset": 751
                     }
                 }
             },
@@ -515,17 +515,17 @@
                     "startLine": 67,
                     "startColumn": 4,
                     "startOffset": 2600,
-                    "endColumn": 44,
-                    "endOffset": 2640
+                    "endColumn": 45,
+                    "endOffset": 2641
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 29,
+                        "startLine": 37,
                         "startColumn": 4,
-                        "startOffset": 1315,
-                        "endColumn": 44,
-                        "endOffset": 1355
+                        "startOffset": 1654,
+                        "endColumn": 45,
+                        "endOffset": 1695
                     }
                 }
             },
@@ -533,18 +533,18 @@
                 "to": {
                     "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 2645,
-                    "endColumn": 44,
-                    "endOffset": 2685
+                    "startOffset": 2646,
+                    "endColumn": 45,
+                    "endOffset": 2687
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 32,
                         "startColumn": 4,
-                        "startOffset": 1269,
-                        "endColumn": 44,
-                        "endOffset": 1309
+                        "startOffset": 1463,
+                        "endColumn": 45,
+                        "endOffset": 1504
                     }
                 }
             },
@@ -552,18 +552,18 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 2690,
+                    "startOffset": 2692,
                     "endColumn": 46,
-                    "endOffset": 2732
+                    "endOffset": 2734
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 1221,
+                        "startOffset": 1363,
                         "endColumn": 46,
-                        "endOffset": 1263
+                        "endOffset": 1405
                     }
                 }
             },
@@ -571,18 +571,18 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 2737,
-                    "endColumn": 45,
-                    "endOffset": 2778
+                    "startOffset": 2739,
+                    "endColumn": 50,
+                    "endOffset": 2785
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 31,
                         "startColumn": 4,
-                        "startOffset": 558,
-                        "endColumn": 45,
-                        "endOffset": 599
+                        "startOffset": 1411,
+                        "endColumn": 50,
+                        "endOffset": 1457
                     }
                 }
             },
@@ -590,18 +590,18 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 2783,
+                    "startOffset": 2790,
                     "endColumn": 44,
-                    "endOffset": 2823
+                    "endOffset": 2830
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 512,
+                        "startOffset": 1317,
                         "endColumn": 44,
-                        "endOffset": 552
+                        "endOffset": 1357
                     }
                 }
             },
@@ -609,18 +609,18 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 2828,
-                    "endColumn": 53,
-                    "endOffset": 2877
+                    "startOffset": 2835,
+                    "endColumn": 44,
+                    "endOffset": 2875
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 755,
-                        "endColumn": 53,
-                        "endOffset": 804
+                        "startOffset": 1271,
+                        "endColumn": 44,
+                        "endOffset": 1311
                     }
                 }
             },
@@ -628,18 +628,18 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 2882,
-                    "endColumn": 47,
-                    "endOffset": 2925
+                    "startOffset": 2880,
+                    "endColumn": 46,
+                    "endOffset": 2922
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 911,
-                        "endColumn": 47,
-                        "endOffset": 954
+                        "startOffset": 1223,
+                        "endColumn": 46,
+                        "endOffset": 1265
                     }
                 }
             },
@@ -647,18 +647,18 @@
                 "to": {
                     "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 2930,
-                    "endColumn": 53,
-                    "endOffset": 2979
+                    "startOffset": 2927,
+                    "endColumn": 45,
+                    "endOffset": 2968
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 960,
-                        "endColumn": 53,
-                        "endOffset": 1009
+                        "startOffset": 560,
+                        "endColumn": 45,
+                        "endOffset": 601
                     }
                 }
             },
@@ -666,18 +666,18 @@
                 "to": {
                     "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 2984,
-                    "endColumn": 49,
-                    "endOffset": 3029
+                    "startOffset": 2973,
+                    "endColumn": 44,
+                    "endOffset": 3013
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 810,
-                        "endColumn": 49,
-                        "endOffset": 855
+                        "startOffset": 514,
+                        "endColumn": 44,
+                        "endOffset": 554
                     }
                 }
             },
@@ -685,18 +685,18 @@
                 "to": {
                     "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 3034,
-                    "endColumn": 49,
-                    "endOffset": 3079
+                    "startOffset": 3018,
+                    "endColumn": 45,
+                    "endOffset": 3059
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 35,
                         "startColumn": 4,
-                        "startOffset": 1015,
-                        "endColumn": 49,
-                        "endOffset": 1060
+                        "startOffset": 1561,
+                        "endColumn": 45,
+                        "endOffset": 1602
                     }
                 }
             },
@@ -704,18 +704,18 @@
                 "to": {
                     "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 3084,
-                    "endColumn": 49,
-                    "endOffset": 3129
+                    "startOffset": 3064,
+                    "endColumn": 53,
+                    "endOffset": 3113
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1066,
-                        "endColumn": 49,
-                        "endOffset": 1111
+                        "startOffset": 757,
+                        "endColumn": 53,
+                        "endOffset": 806
                     }
                 }
             },
@@ -723,18 +723,18 @@
                 "to": {
                     "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 3134,
-                    "endColumn": 49,
-                    "endOffset": 3179
+                    "startOffset": 3118,
+                    "endColumn": 47,
+                    "endOffset": 3161
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 1117,
-                        "endColumn": 49,
-                        "endOffset": 1162
+                        "startOffset": 913,
+                        "endColumn": 47,
+                        "endOffset": 956
                     }
                 }
             },
@@ -742,18 +742,18 @@
                 "to": {
                     "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 3184,
-                    "endColumn": 48,
-                    "endOffset": 3228
+                    "startOffset": 3166,
+                    "endColumn": 53,
+                    "endOffset": 3215
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 861,
-                        "endColumn": 48,
-                        "endOffset": 905
+                        "startOffset": 962,
+                        "endColumn": 53,
+                        "endOffset": 1011
                     }
                 }
             },
@@ -761,18 +761,18 @@
                 "to": {
                     "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 3233,
-                    "endColumn": 51,
-                    "endOffset": 3280
+                    "startOffset": 3220,
+                    "endColumn": 49,
+                    "endOffset": 3265
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1168,
-                        "endColumn": 51,
-                        "endOffset": 1215
+                        "startOffset": 812,
+                        "endColumn": 49,
+                        "endOffset": 857
                     }
                 }
             },
@@ -780,18 +780,18 @@
                 "to": {
                     "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 3285,
-                    "endColumn": 47,
-                    "endOffset": 3328
+                    "startOffset": 3270,
+                    "endColumn": 49,
+                    "endOffset": 3315
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 605,
-                        "endColumn": 47,
-                        "endOffset": 648
+                        "startOffset": 1017,
+                        "endColumn": 49,
+                        "endOffset": 1062
                     }
                 }
             },
@@ -799,18 +799,18 @@
                 "to": {
                     "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 3333,
-                    "endColumn": 51,
-                    "endOffset": 3380
+                    "startOffset": 3320,
+                    "endColumn": 49,
+                    "endOffset": 3365
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 654,
-                        "endColumn": 51,
-                        "endOffset": 701
+                        "startOffset": 1068,
+                        "endColumn": 49,
+                        "endOffset": 1113
                     }
                 }
             },
@@ -818,18 +818,18 @@
                 "to": {
                     "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 3385,
-                    "endColumn": 52,
-                    "endOffset": 3433
+                    "startOffset": 3370,
+                    "endColumn": 49,
+                    "endOffset": 3415
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
                     "position": {
-                        "startLine": 12,
-                        "startColumn": 1,
-                        "startOffset": 458,
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1119,
                         "endColumn": 49,
-                        "endOffset": 506
+                        "endOffset": 1164
                     }
                 }
             },
@@ -837,9 +837,142 @@
                 "to": {
                     "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 3438,
+                    "startOffset": 3420,
+                    "endColumn": 48,
+                    "endOffset": 3464
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 863,
+                        "endColumn": 48,
+                        "endOffset": 907
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 85,
+                    "startColumn": 4,
+                    "startOffset": 3469,
+                    "endColumn": 51,
+                    "endOffset": 3516
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1170,
+                        "endColumn": 51,
+                        "endOffset": 1217
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 86,
+                    "startColumn": 4,
+                    "startOffset": 3521,
+                    "endColumn": 44,
+                    "endOffset": 3561
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1608,
+                        "endColumn": 44,
+                        "endOffset": 1648
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 87,
+                    "startColumn": 4,
+                    "startOffset": 3566,
+                    "endColumn": 47,
+                    "endOffset": 3609
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 607,
+                        "endColumn": 47,
+                        "endOffset": 650
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 88,
+                    "startColumn": 4,
+                    "startOffset": 3614,
+                    "endColumn": 51,
+                    "endOffset": 3661
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 656,
+                        "endColumn": 51,
+                        "endOffset": 703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 89,
+                    "startColumn": 4,
+                    "startOffset": 3666,
+                    "endColumn": 47,
+                    "endOffset": 3709
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1512,
+                        "endColumn": 47,
+                        "endOffset": 1555
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 90,
+                    "startColumn": 4,
+                    "startOffset": 3714,
+                    "endColumn": 52,
+                    "endOffset": 3762
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 1,
+                        "startOffset": 460,
+                        "endColumn": 49,
+                        "endOffset": 508
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 91,
+                    "startColumn": 4,
+                    "startOffset": 3767,
                     "endColumn": 39,
-                    "endOffset": 3473
+                    "endOffset": 3802
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -854,11 +987,87 @@
             },
             {
                 "to": {
-                    "startLine": 85,
+                    "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 3478,
+                    "startOffset": 3807,
+                    "endColumn": 57,
+                    "endOffset": 3860
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 93,
+                    "startColumn": 4,
+                    "startOffset": 3865,
+                    "endColumn": 63,
+                    "endOffset": 3924
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 150,
+                        "endColumn": 63,
+                        "endOffset": 209
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 94,
+                    "startColumn": 4,
+                    "startOffset": 3929,
+                    "endColumn": 55,
+                    "endOffset": 3980
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 214,
+                        "endColumn": 55,
+                        "endOffset": 265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 95,
+                    "startColumn": 4,
+                    "startOffset": 3985,
+                    "endColumn": 41,
+                    "endOffset": 4022
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 484,
+                        "endColumn": 41,
+                        "endOffset": 521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 96,
+                    "startColumn": 4,
+                    "startOffset": 4027,
                     "endColumn": 52,
-                    "endOffset": 3526
+                    "endOffset": 4075
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -873,11 +1082,11 @@
             },
             {
                 "to": {
-                    "startLine": 86,
+                    "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 3531,
+                    "startOffset": 4080,
                     "endColumn": 52,
-                    "endOffset": 3579
+                    "endOffset": 4128
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -892,11 +1101,30 @@
             },
             {
                 "to": {
-                    "startLine": 87,
+                    "startLine": 98,
                     "startColumn": 4,
-                    "startOffset": 3584,
+                    "startOffset": 4133,
+                    "endColumn": 41,
+                    "endOffset": 4170
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 526,
+                        "endColumn": 41,
+                        "endOffset": 563
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 99,
+                    "startColumn": 4,
+                    "startOffset": 4175,
                     "endColumn": 36,
-                    "endOffset": 3616
+                    "endOffset": 4207
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
@@ -911,11 +1139,11 @@
             },
             {
                 "to": {
-                    "startLine": 88,
+                    "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 3621,
+                    "startOffset": 4212,
                     "endColumn": 44,
-                    "endOffset": 3661
+                    "endOffset": 4252
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -930,11 +1158,11 @@
             },
             {
                 "to": {
-                    "startLine": 89,
+                    "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 3666,
+                    "startOffset": 4257,
                     "endColumn": 44,
-                    "endOffset": 3706
+                    "endOffset": 4297
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -949,11 +1177,87 @@
             },
             {
                 "to": {
-                    "startLine": 90,
+                    "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 3711,
+                    "startOffset": 4302,
                     "endColumn": 45,
-                    "endOffset": 3752
+                    "endOffset": 4343
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 390,
+                        "endColumn": 45,
+                        "endOffset": 431
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 103,
+                    "startColumn": 4,
+                    "startOffset": 4348,
+                    "endColumn": 47,
+                    "endOffset": 4391
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 294,
+                        "endColumn": 47,
+                        "endOffset": 337
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 104,
+                    "startColumn": 4,
+                    "startOffset": 4396,
+                    "endColumn": 46,
+                    "endOffset": 4438
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 436,
+                        "endColumn": 46,
+                        "endOffset": 478
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 105,
+                    "startColumn": 4,
+                    "startOffset": 4443,
+                    "endColumn": 47,
+                    "endOffset": 4486
+                },
+                "from": {
+                    "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 342,
+                        "endColumn": 47,
+                        "endOffset": 385
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 106,
+                    "startColumn": 4,
+                    "startOffset": 4491,
+                    "endColumn": 45,
+                    "endOffset": 4532
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -968,11 +1272,11 @@
             },
             {
                 "to": {
-                    "startLine": 91,
+                    "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 3757,
+                    "startOffset": 4537,
                     "endColumn": 48,
-                    "endOffset": 3801
+                    "endOffset": 4581
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -987,11 +1291,11 @@
             },
             {
                 "to": {
-                    "startLine": 92,
+                    "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 3806,
+                    "startOffset": 4586,
                     "endColumn": 43,
-                    "endOffset": 3845
+                    "endOffset": 4625
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1006,11 +1310,11 @@
             },
             {
                 "to": {
-                    "startLine": 93,
+                    "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 3850,
+                    "startOffset": 4630,
                     "endColumn": 81,
-                    "endOffset": 3927
+                    "endOffset": 4707
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1025,11 +1329,11 @@
             },
             {
                 "to": {
-                    "startLine": 94,
+                    "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 3932,
+                    "startOffset": 4712,
                     "endColumn": 97,
-                    "endOffset": 4025
+                    "endOffset": 4805
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1044,11 +1348,11 @@
             },
             {
                 "to": {
-                    "startLine": 95,
+                    "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 4030,
+                    "startOffset": 4810,
                     "endColumn": 39,
-                    "endOffset": 4065
+                    "endOffset": 4845
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1063,11 +1367,11 @@
             },
             {
                 "to": {
-                    "startLine": 96,
+                    "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 4070,
+                    "startOffset": 4850,
                     "endColumn": 40,
-                    "endOffset": 4106
+                    "endOffset": 4886
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1082,11 +1386,11 @@
             },
             {
                 "to": {
-                    "startLine": 97,
+                    "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 4111,
+                    "startOffset": 4891,
                     "endColumn": 47,
-                    "endOffset": 4154
+                    "endOffset": 4934
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1101,11 +1405,11 @@
             },
             {
                 "to": {
-                    "startLine": 98,
+                    "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 4159,
+                    "startOffset": 4939,
                     "endColumn": 74,
-                    "endOffset": 4229
+                    "endOffset": 5009
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1120,11 +1424,11 @@
             },
             {
                 "to": {
-                    "startLine": 99,
+                    "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 4234,
+                    "startOffset": 5014,
                     "endColumn": 31,
-                    "endOffset": 4261
+                    "endOffset": 5041
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1139,11 +1443,11 @@
             },
             {
                 "to": {
-                    "startLine": 100,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 4266,
+                    "startOffset": 5046,
                     "endColumn": 66,
-                    "endOffset": 4328
+                    "endOffset": 5108
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1158,11 +1462,11 @@
             },
             {
                 "to": {
-                    "startLine": 101,
+                    "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 4333,
+                    "startOffset": 5113,
                     "endColumn": 53,
-                    "endOffset": 4382
+                    "endOffset": 5162
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1177,11 +1481,11 @@
             },
             {
                 "to": {
-                    "startLine": 102,
+                    "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 4387,
+                    "startOffset": 5167,
                     "endColumn": 45,
-                    "endOffset": 4428
+                    "endOffset": 5208
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1196,11 +1500,11 @@
             },
             {
                 "to": {
-                    "startLine": 103,
+                    "startLine": 119,
                     "startColumn": 4,
-                    "startOffset": 4433,
+                    "startOffset": 5213,
                     "endColumn": 47,
-                    "endOffset": 4476
+                    "endOffset": 5256
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1215,11 +1519,11 @@
             },
             {
                 "to": {
-                    "startLine": 104,
+                    "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 4481,
+                    "startOffset": 5261,
                     "endColumn": 51,
-                    "endOffset": 4528
+                    "endOffset": 5308
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1234,11 +1538,11 @@
             },
             {
                 "to": {
-                    "startLine": 105,
+                    "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 4533,
+                    "startOffset": 5313,
                     "endColumn": 48,
-                    "endOffset": 4577
+                    "endOffset": 5357
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1253,11 +1557,11 @@
             },
             {
                 "to": {
-                    "startLine": 106,
+                    "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 4582,
+                    "startOffset": 5362,
                     "endColumn": 76,
-                    "endOffset": 4654
+                    "endOffset": 5434
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1272,11 +1576,11 @@
             },
             {
                 "to": {
-                    "startLine": 107,
+                    "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 4659,
+                    "startOffset": 5439,
                     "endColumn": 49,
-                    "endOffset": 4704
+                    "endOffset": 5484
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1291,11 +1595,11 @@
             },
             {
                 "to": {
-                    "startLine": 108,
+                    "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 4709,
+                    "startOffset": 5489,
                     "endColumn": 53,
-                    "endOffset": 4758
+                    "endOffset": 5538
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\strings.xml",
@@ -1310,12 +1614,12 @@
             },
             {
                 "to": {
-                    "startLine": 109,
+                    "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 4763,
-                    "endLine": 123,
+                    "startOffset": 5543,
+                    "endLine": 139,
                     "endColumn": 12,
-                    "endOffset": 5536
+                    "endOffset": 6316
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\boto.xml",
@@ -1331,12 +1635,12 @@
             },
             {
                 "to": {
-                    "startLine": 124,
+                    "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 5541,
-                    "endLine": 127,
+                    "startOffset": 6321,
+                    "endLine": 143,
                     "endColumn": 9,
-                    "endOffset": 5683
+                    "endOffset": 6463
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\themes.xml",
@@ -1352,12 +1656,12 @@
             },
             {
                 "to": {
-                    "startLine": 128,
+                    "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 5688,
-                    "endLine": 143,
+                    "startOffset": 6468,
+                    "endLine": 159,
                     "endColumn": 9,
-                    "endOffset": 6522
+                    "endOffset": 7302
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\themes.xml",
@@ -1373,12 +1677,12 @@
             },
             {
                 "to": {
-                    "startLine": 144,
+                    "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 6527,
-                    "endLine": 151,
+                    "startOffset": 7307,
+                    "endLine": 167,
                     "endColumn": 12,
-                    "endOffset": 6975
+                    "endOffset": 7755
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1394,12 +1698,12 @@
             },
             {
                 "to": {
-                    "startLine": 152,
+                    "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 6980,
-                    "endLine": 168,
+                    "startOffset": 7760,
+                    "endLine": 184,
                     "endColumn": 9,
-                    "endOffset": 7902
+                    "endOffset": 8682
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\themes.xml",
@@ -1415,12 +1719,12 @@
             },
             {
                 "to": {
-                    "startLine": 169,
+                    "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 7907,
-                    "endLine": 177,
+                    "startOffset": 8687,
+                    "endLine": 193,
                     "endColumn": 12,
-                    "endOffset": 8277
+                    "endOffset": 9057
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1436,12 +1740,12 @@
             },
             {
                 "to": {
-                    "startLine": 178,
+                    "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 8282,
-                    "endLine": 181,
+                    "startOffset": 9062,
+                    "endLine": 197,
                     "endColumn": 12,
-                    "endOffset": 8463
+                    "endOffset": 9243
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1457,12 +1761,12 @@
             },
             {
                 "to": {
-                    "startLine": 182,
+                    "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 8468,
-                    "endLine": 194,
+                    "startOffset": 9248,
+                    "endLine": 210,
                     "endColumn": 12,
-                    "endOffset": 9190
+                    "endOffset": 9970
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1478,12 +1782,12 @@
             },
             {
                 "to": {
-                    "startLine": 195,
+                    "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 9195,
-                    "endLine": 200,
+                    "startOffset": 9975,
+                    "endLine": 216,
                     "endColumn": 12,
-                    "endOffset": 9470
+                    "endOffset": 10250
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1499,12 +1803,12 @@
             },
             {
                 "to": {
-                    "startLine": 201,
+                    "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 9475,
-                    "endLine": 203,
+                    "startOffset": 10255,
+                    "endLine": 219,
                     "endColumn": 12,
-                    "endOffset": 9613
+                    "endOffset": 10393
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1520,12 +1824,12 @@
             },
             {
                 "to": {
-                    "startLine": 204,
+                    "startLine": 220,
                     "startColumn": 4,
-                    "startOffset": 9618,
-                    "endLine": 208,
+                    "startOffset": 10398,
+                    "endLine": 224,
                     "endColumn": 12,
-                    "endOffset": 9871
+                    "endOffset": 10651
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1541,12 +1845,12 @@
             },
             {
                 "to": {
-                    "startLine": 209,
+                    "startLine": 225,
                     "startColumn": 4,
-                    "startOffset": 9876,
-                    "endLine": 213,
+                    "startOffset": 10656,
+                    "endLine": 229,
                     "endColumn": 12,
-                    "endOffset": 10111
+                    "endOffset": 10891
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1562,12 +1866,12 @@
             },
             {
                 "to": {
-                    "startLine": 214,
+                    "startLine": 230,
                     "startColumn": 4,
-                    "startOffset": 10116,
-                    "endLine": 222,
+                    "startOffset": 10896,
+                    "endLine": 238,
                     "endColumn": 12,
-                    "endOffset": 10563
+                    "endOffset": 11343
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1583,12 +1887,12 @@
             },
             {
                 "to": {
-                    "startLine": 223,
+                    "startLine": 239,
                     "startColumn": 4,
-                    "startOffset": 10568,
-                    "endLine": 236,
+                    "startOffset": 11348,
+                    "endLine": 252,
                     "endColumn": 12,
-                    "endOffset": 11343
+                    "endOffset": 12123
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1604,12 +1908,12 @@
             },
             {
                 "to": {
-                    "startLine": 237,
+                    "startLine": 253,
                     "startColumn": 4,
-                    "startOffset": 11348,
-                    "endLine": 245,
+                    "startOffset": 12128,
+                    "endLine": 261,
                     "endColumn": 12,
-                    "endOffset": 11648
+                    "endOffset": 12428
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1625,12 +1929,12 @@
             },
             {
                 "to": {
-                    "startLine": 246,
+                    "startLine": 262,
                     "startColumn": 4,
-                    "startOffset": 11653,
-                    "endLine": 249,
+                    "startOffset": 12433,
+                    "endLine": 265,
                     "endColumn": 12,
-                    "endOffset": 11847
+                    "endOffset": 12627
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1646,12 +1950,12 @@
             },
             {
                 "to": {
-                    "startLine": 250,
+                    "startLine": 266,
                     "startColumn": 4,
-                    "startOffset": 11852,
-                    "endLine": 252,
+                    "startOffset": 12632,
+                    "endLine": 268,
                     "endColumn": 12,
-                    "endOffset": 11968
+                    "endOffset": 12748
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1667,12 +1971,12 @@
             },
             {
                 "to": {
-                    "startLine": 253,
+                    "startLine": 269,
                     "startColumn": 4,
-                    "startOffset": 11973,
-                    "endLine": 255,
+                    "startOffset": 12753,
+                    "endLine": 271,
                     "endColumn": 12,
-                    "endOffset": 12089
+                    "endOffset": 12869
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1688,12 +1992,12 @@
             },
             {
                 "to": {
-                    "startLine": 256,
+                    "startLine": 272,
                     "startColumn": 4,
-                    "startOffset": 12094,
-                    "endLine": 260,
+                    "startOffset": 12874,
+                    "endLine": 276,
                     "endColumn": 12,
-                    "endOffset": 12309
+                    "endOffset": 13089
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1709,11 +2013,11 @@
             },
             {
                 "to": {
-                    "startLine": 261,
+                    "startLine": 277,
                     "startColumn": 4,
-                    "startOffset": 12314,
+                    "startOffset": 13094,
                     "endColumn": 73,
-                    "endOffset": 12383
+                    "endOffset": 13163
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1728,12 +2032,12 @@
             },
             {
                 "to": {
-                    "startLine": 262,
+                    "startLine": 278,
                     "startColumn": 4,
-                    "startOffset": 12388,
-                    "endLine": 266,
+                    "startOffset": 13168,
+                    "endLine": 282,
                     "endColumn": 12,
-                    "endOffset": 12581
+                    "endOffset": 13361
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1749,12 +2053,12 @@
             },
             {
                 "to": {
-                    "startLine": 267,
+                    "startLine": 283,
                     "startColumn": 4,
-                    "startOffset": 12586,
-                    "endLine": 273,
+                    "startOffset": 13366,
+                    "endLine": 289,
                     "endColumn": 12,
-                    "endOffset": 12897
+                    "endOffset": 13677
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1770,12 +2074,12 @@
             },
             {
                 "to": {
-                    "startLine": 274,
+                    "startLine": 290,
                     "startColumn": 4,
-                    "startOffset": 12902,
-                    "endLine": 278,
+                    "startOffset": 13682,
+                    "endLine": 294,
                     "endColumn": 12,
-                    "endOffset": 13115
+                    "endOffset": 13895
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1791,12 +2095,12 @@
             },
             {
                 "to": {
-                    "startLine": 279,
+                    "startLine": 295,
                     "startColumn": 4,
-                    "startOffset": 13120,
-                    "endLine": 282,
+                    "startOffset": 13900,
+                    "endLine": 298,
                     "endColumn": 12,
-                    "endOffset": 13282
+                    "endOffset": 14062
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1812,12 +2116,12 @@
             },
             {
                 "to": {
-                    "startLine": 283,
+                    "startLine": 299,
                     "startColumn": 4,
-                    "startOffset": 13287,
-                    "endLine": 291,
+                    "startOffset": 14067,
+                    "endLine": 307,
                     "endColumn": 12,
-                    "endOffset": 13689
+                    "endOffset": 14469
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1833,12 +2137,12 @@
             },
             {
                 "to": {
-                    "startLine": 292,
+                    "startLine": 308,
                     "startColumn": 4,
-                    "startOffset": 13694,
-                    "endLine": 299,
+                    "startOffset": 14474,
+                    "endLine": 315,
                     "endColumn": 12,
-                    "endOffset": 14044
+                    "endOffset": 14824
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1854,12 +2158,12 @@
             },
             {
                 "to": {
-                    "startLine": 300,
+                    "startLine": 316,
                     "startColumn": 4,
-                    "startOffset": 14049,
-                    "endLine": 311,
+                    "startOffset": 14829,
+                    "endLine": 327,
                     "endColumn": 12,
-                    "endOffset": 14618
+                    "endOffset": 15398
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1875,12 +2179,12 @@
             },
             {
                 "to": {
-                    "startLine": 312,
+                    "startLine": 328,
                     "startColumn": 4,
-                    "startOffset": 14623,
-                    "endLine": 314,
+                    "startOffset": 15403,
+                    "endLine": 330,
                     "endColumn": 12,
-                    "endOffset": 14723
+                    "endOffset": 15503
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1896,11 +2200,11 @@
             },
             {
                 "to": {
-                    "startLine": 315,
+                    "startLine": 331,
                     "startColumn": 4,
-                    "startOffset": 14728,
+                    "startOffset": 15508,
                     "endColumn": 63,
-                    "endOffset": 14787
+                    "endOffset": 15567
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1915,12 +2219,12 @@
             },
             {
                 "to": {
-                    "startLine": 316,
+                    "startLine": 332,
                     "startColumn": 4,
-                    "startOffset": 14792,
-                    "endLine": 325,
+                    "startOffset": 15572,
+                    "endLine": 341,
                     "endColumn": 12,
-                    "endOffset": 15284
+                    "endOffset": 16064
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1936,12 +2240,12 @@
             },
             {
                 "to": {
-                    "startLine": 326,
+                    "startLine": 342,
                     "startColumn": 4,
-                    "startOffset": 15289,
-                    "endLine": 329,
+                    "startOffset": 16069,
+                    "endLine": 345,
                     "endColumn": 12,
-                    "endOffset": 15460
+                    "endOffset": 16240
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",
@@ -1957,12 +2261,12 @@
             },
             {
                 "to": {
-                    "startLine": 330,
+                    "startLine": 346,
                     "startColumn": 4,
-                    "startOffset": 15465,
-                    "endLine": 333,
+                    "startOffset": 16245,
+                    "endLine": 349,
                     "endColumn": 12,
-                    "endOffset": 15637
+                    "endOffset": 16417
                 },
                 "from": {
                     "file": "C:\\gestions\\Apps\\SmartTask\\res\\values\\styles.xml",

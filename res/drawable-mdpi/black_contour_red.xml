@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- view background color -->
+    <solid android:color="#F05F5F"></solid>
+    <item android:state_pressed = "true"
+        android:drawable="@drawable/black_contour">
+    </item>
+
+    <!-- view border color and width -->
+    <stroke
+        android:width="@dimen/borderDimen"
+        android:color="@color/black"></stroke>
+
+</shape>

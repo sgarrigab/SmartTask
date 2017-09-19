@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="mitja">15sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_small_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="size_normal_text">18sp</dimen>
+    <dimen name="size_small_title">20sp</dimen>
+    <dimen name="size_big_title">30sp</dimen>
+    <dimen name="size_small_text">16sp</dimen>
+
+    <dimen name="borderDimen">2dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

@@ -90,6 +90,7 @@ public class LlistaDocumentPendents extends TPlantillaList {
 	public void runSQL() {
 		CurrentUser = Utilitats.getCurrentUser(getContext());
 		String wDat = formatMDY.format(dataMov.getTime());
+
 		String Sql = "select Cap.tipus,Cap.docum,Cap._id,data dataf,Cap.client,Cap.nom,Cap.state from Cap  left join Clients on (Clients.subjecte = Cap.client) " +
 				" where "+Situacio + " and operari = '"+CurrentUser+"' ";
 		if (DataDia)

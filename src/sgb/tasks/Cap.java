@@ -36,6 +36,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,13 +57,13 @@ public class Cap extends TPlantillaMant implements LocationListener {
     SGEdit data;
     SGEdit entrega;
     Boolean swLocation;
-    SGEdit hora;
+    SGEdit hora,hora_final;
     TextView total;
     Comptadors ct;
     String PROGRAMA = "Cap";
     DatePickerDialog dpk;
     TFormField fDocument;
-    Button iniciar_servei;
+    ImageButton iniciar_servei;
     Button imatges;
     Button signa;
     Boolean swAlta;
@@ -515,8 +516,12 @@ public class Cap extends TPlantillaMant implements LocationListener {
         tipus = "AFA";
         cv.put("tipus", tipus);  // Feine en curs
         cv.put("_id", _id);
-        cv.put("state", "F");
-        getCamps().setValue("state","F");
+        cv.put("state", "P");
+        cv.put("operari",Utilitats.getTerminalUser(act));
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+        String currentDateandTime = sdf.format(new Date());
+        cv.put("hora",currentDateandTime);
+        getCamps().setValue("state","P");
         turnGpsOn(); // Arranquem el GPSJa
 
 
@@ -527,14 +532,17 @@ public class Cap extends TPlantillaMant implements LocationListener {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         String f = df.format(now);
         cv.put("entrega", f);
+        getCamps().setValue("entrega",f);
+
         df = new SimpleDateFormat("yyMMdd");
         f = df.format(now);
         String doc_ordre = f + Utilitats.getTerminalUser(act);
 
         cv.put("doc_ordre", doc_ordre);
-        df = new SimpleDateFormat("hh:mm");
+        df = new SimpleDateFormat("HH:mm");
         f = df.format(now);
         cv.put("hora", f);
+        getCamps().setValue("hora",f);
 
         Calendar rightNow = Calendar.getInstance();
         int hour = rightNow.get(Calendar.HOUR_OF_DAY);
@@ -705,37 +713,48 @@ public class Cap extends TPlantillaMant implements LocationListener {
 
 
         gravar();
-		AlertDialog.Builder builder = new AlertDialog.Builder(act);
-		builder.setMessage("Vol finalitzar la comanda?")
-				.setCancelable(false)
-				.setPositiveButton("Yes",
-						new DialogInterface.OnClickListener() {
-							public void onClick(DialogInterface dialog, int id) {
-								finalitzarComanda();
-                                if (Utilitats.isOnline(act) == true) {
-                                    new ExportCsv(act, "N").start();
 
-//                                    if (false) {
-//									SendData p = new SendData();
-//									p.send(act, "<AIXO ES UNA PROVA DE DADES>");
-//                                  Utilitats.enviarComandaPerMail(act, helper,
-//                                           document);
+        if (tipus.startsWith("A") == false)  // No és una comanda
+        {
+//            Utilitats.ShowModal(act, "No es pot finalitzar un document No iniciat.");
+            act.finish();
+        }
+        else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(act);
+            builder.setMessage("Vol finalitzar la comanda?")
+                    .setCancelable(false)
+                    .setPositiveButton("Yes",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+
+                                        finalitzarComanda();
+                                        if (Utilitats.isOnline(act) == true) {
+                                            new ExportCsv(act, "N").start();
+
+                                            //                                    if (false) {
+                                            //									SendData p = new SendData();
+                                            //									p.send(act, "<AIXO ES UNA PROVA DE DADES>");
+                                            //                                  Utilitats.enviarComandaPerMail(act, helper,
+                                            //                                           document);
+                                        } else
+                                            Utilitats.ShowModal(act, "No hi ha connexió internet.");
+                                        act.finish();
+
+//							}
+
                                 }
-                                else
-                                    Utilitats.ShowModal(act, "No hi ha connexió internet.");
-                                act.finish();
-//								}
+                            })
+                    .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            dialog.cancel();
+                            act.finish();
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+        }
 
-							}
-						})
-				.setNegativeButton("No", new DialogInterface.OnClickListener() {
-					public void onClick(DialogInterface dialog, int id) {
-						dialog.cancel();
-                        act.finish();
-					}
-				});
-		AlertDialog alert = builder.create();
-		alert.show();
+
     }
 
     DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
@@ -759,8 +778,12 @@ public class Cap extends TPlantillaMant implements LocationListener {
         helper.getReadableDatabase().execSQL(
                 "update linia set state='F' where docum =" + document);
 
-        helper.getReadableDatabase().execSQL(
-                "update Cap set state='F' where docum =" + document);
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+        String currentDateandTime = sdf.format(new Date());
+
+        String sq = "update Cap set state='F',hora_final='"+currentDateandTime+"' where docum =" + document;
+        helper.getReadableDatabase().execSQL(sq);
+
 
         Toast.makeText(getContext(),
                 "Comanda Finalitzada en espera de tramesa : " + s,
@@ -782,6 +805,8 @@ public class Cap extends TPlantillaMant implements LocationListener {
                 new TFormField("client", view.findViewById(R.id.client_code)));
         getCamps().getCamps().add(
                 new TFormField("hora", view.findViewById(R.id.client_hora)));
+        getCamps().getCamps().add(
+                new TFormField("hora_final", view.findViewById(R.id.client_hora_final)));
         getCamps().getCamps().add(
                 new TFormField("entrega", view
                         .findViewById(R.id.client_entrega), 0, "", "", InputType.TYPE_DATETIME_VARIATION_DATE));
@@ -811,7 +836,7 @@ public class Cap extends TPlantillaMant implements LocationListener {
         getCamps().initialize();
         total = (SGEdit) view.findViewById(R.id.client_total);
 
-        iniciar_servei = (Button) view.findViewById(R.id.iniciar_servei);
+        iniciar_servei = (ImageButton) view.findViewById(R.id.iniciar_servei);
         imatges = (Button) findViewById(R.id.linies_imatges);
         signa = (Button) findViewById(R.id.linies_signa);
         signa.setOnClickListener(this);

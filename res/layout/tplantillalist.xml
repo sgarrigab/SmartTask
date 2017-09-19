@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:background="#c1cdc1"
             android:focusable="true"
+            android:visibility="gone"
             android:focusableInTouchMode="true"
             android:orientation="horizontal"
             android:weightSum="1"

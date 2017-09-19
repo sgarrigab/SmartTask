@@ -57,7 +57,7 @@ class OrdersHelper extends SQLiteOpenHelper {
 
 
 		db.execSQL("CREATE TABLE CliRuta     ( ruta TEXT, Subjecte TEXT,  ordre INTEGER , PRIMARY KEY(ruta,subjecte));");
-		db.execSQL("CREATE TABLE Cap         ( _id INTEGER PRIMARY KEY AUTOINCREMENT,tipus TEXT,docum LONG,client TEXT, nom TEXT,doc_ordre LONG,parent LONG,data TEXT, entrega TEXT,hora TEXT,durada REAL,state TEXT,quant REAL,value REAL,notes TEXT, dtegrup REAL,dtecomercial REAL,comentari TEXT,time_inici TEXT,lloc_inici TEXT,latitud REAL,longitud REAL, TEXT,dtepp REAL, agents TEXT,operari TEXT,vehicle TEXT,tipus_exp TEXT,doc_exp LONG,unic_imatges TEXT);");
+		db.execSQL("CREATE TABLE Cap         ( _id INTEGER PRIMARY KEY AUTOINCREMENT,tipus TEXT,docum LONG,client TEXT, nom TEXT,doc_ordre LONG,parent LONG,data TEXT, entrega TEXT,hora TEXT,hora_final TEXT,state TEXT,quant REAL,value REAL,notes TEXT, dtegrup REAL,dtecomercial REAL,comentari TEXT,time_inici TEXT,lloc_inici TEXT,latitud REAL,longitud REAL, TEXT,dtepp REAL, agents TEXT,operari TEXT,vehicle TEXT,tipus_exp TEXT,doc_exp LONG,unic_imatges TEXT);");
 		db.execSQL("CREATE TABLE Linia       ( _id INTEGER PRIMARY KEY AUTOINCREMENT,tipus TEXT,docum LONG,doc_origen LONG,unic_origen LONG,article TEXT,descripcio TEXT,quant REAL,servir REAL,preu REAL,preunet REAL, tipdte TEXT	,dte REAL,notes TEXT,state TEXT," +
 				"codi_obs TEXT,codi_vehicle TEXT,article_regal TEXT,quantitat_regal REAL,preu_regal REAL,canviPreu INTEGER,matricula TEXT, marca TEXT, model TEXT, geo_lng_ini TEXT, geo_lat_ini TEXT, butlleti TEXT, loc_ini TEXT, time_ini TEXT, codiserie TEXT,agenda INTEGER );");
 		db.execSQL("CREATE TABLE Filtres     (_id INTEGER PRIMARY KEY , descripcio TEXT,sql TEXT);");

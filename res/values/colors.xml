@@ -5,7 +5,9 @@
  ! Copyrights apply to this code. It may not be used to create training material, 
  ! courses, books, articles, and the like. Contact us if you are in doubt.
  ! We make no guarantees that this code is fit for any purpose. 
- ! Visit http://www.pragmaticprogrammer.com/titles/eband for more book information.
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband for more book information.
+
+
 -->
 <resources>
 	<color name="transparent_blue">#80004488</color>
@@ -26,5 +28,13 @@
     <color name="greenStart">#ff33dd44</color>
     <color name="greenMid">#ff0A8815</color>
     <color name="greenEnd">#ff1da130</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="toolbar_color">#C5CAE8</color>
+    <color name="logIn_color">#3399ff</color>
+    <color name="save_color">#a3a3c2</color>
+    <color name="clicked_btn">#ff751a</color>
 
 </resources>

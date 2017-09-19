@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\layout\\orderslist.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\layout\\orderslist.xml"
-    },
-    {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\layout\\cataleg.xml",
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\layout\\cataleg.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\layout\\orderslist.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\layout\\orderslist.xml"
     },
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\layout\\clients.xml",
@@ -86,6 +86,10 @@
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\layout\\navigator.xml",
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\layout\\navigator.xml"
+    },
+    {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\layout\\tplantillalist_row2.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\layout\\tplantillalist_row2.xml"
     },
     {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\release\\layout\\galleryimage.xml",

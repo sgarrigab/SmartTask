@@ -56,11 +56,6 @@
             android:layout_height="55dp"
             android:background="@drawable/arrow_left" />
     </LinearLayout>
-    <Button
-        android:text="Iniciar Servei"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/iniciar_servei" />
 
     <TableLayout
         android:id="@+id/client_detail"
@@ -126,6 +121,15 @@
                     android:focusableInTouchMode="false"
                     android:inputType="date" />
             </TableRow>
+            <TableRow >
+            <sgb.tasks.SGEdit
+                android:id="@+id/client_hora_final"
+                android:layout_span="2"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="date" />
+        </TableRow>
 
 
         </TableRow>
@@ -267,15 +271,29 @@
 
             <sgb.tasks.SGEdit
                 android:id="@+id/client_obs"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:layout_span="4"
                 android:hint="Observacions"
                 android:inputType="textMultiLine"
                 android:singleLine="false" />
         </TableRow>
-
         <TableRow>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/play_green"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn"
+                android:id="@+id/iniciar_servei"
+                android:padding="10dp"
+                android:layout_weight="0.5" />
+
+
         </TableRow>
+
     </TableLayout>
 
 

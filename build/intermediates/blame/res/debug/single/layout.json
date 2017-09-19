@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\layout\\tplantillalist_row2.xml",
+        "source": "C:\\gestions\\Apps\\SmartTask\\res\\layout\\tplantillalist_row2.xml"
+    },
+    {
         "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\layout\\viewflipper.xml",
         "source": "C:\\gestions\\Apps\\SmartTask\\res\\layout\\viewflipper.xml"
     },
