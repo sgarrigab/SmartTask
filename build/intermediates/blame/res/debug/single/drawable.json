@@ -1,338 +1,674 @@
 [
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\users.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\users.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/plus.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/plus.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\send.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\send.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list_divider_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list_divider_wh.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_bg_hover.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient_bg_hover.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\checkmark.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\checkmark.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_preferences.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_preferences.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_drawer.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_drawer.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\checkmark.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\checkmark.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_action_user.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_action_user.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_back.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_back.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\camera.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\camera.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\notes.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\notes.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_rounded_corners.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\edittext_rounded_corners.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_compass.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_compass.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\title_bar_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\title_bar_wh.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_selector.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/button_wh_pressed.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/button_wh_pressed.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\camera.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\camera.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\icono.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\icono.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\nuevo2.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\nuevo2.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_back.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_back.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_wh_selected.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_selected.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\send.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\send.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\white_container_bl.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\white_container_bl.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\back.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\back.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\icono.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\icono.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_settings.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_settings.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\minus.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\minus.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/send.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/send.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_event.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_event.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_divider_bl.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_divider_bl.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\toast.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\toast.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/back.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/back.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_show_list.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_show_list.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\image_bg.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\image_bg.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_agenda.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_agenda.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list_selector.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list_selector.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\record.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\record.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_wh_pressed.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh_pressed.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\calendar.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\calendar.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\nuevo2.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\nuevo2.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_divider_bl.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_divider_bl.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list_item_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list_item_wh.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_wh_pressed.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh_pressed.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_action_star.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_action_star.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_bl.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_bl.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/r96wbv06.bmp",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/r96wbv06.bmp"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ball_green.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ball_green.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_delete.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_delete.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/delete.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/delete.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_bl_normal.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_bl_normal.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_sorta.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_sorta.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_drawer.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_drawer.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/gray_gradient_background.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/gray_gradient_background.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_help.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_help.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\user_icon.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\user_icon.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_wh_pressed.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_pressed.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_divider_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_divider_wh.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_share.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_share.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_bl.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_bl.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_wh.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_star.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_star.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_sorta.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_sorta.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\minus.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\minus.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\nuevo.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\nuevo.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\satellite.gif",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\satellite.gif"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_wh_selected.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh_selected.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/lock_open.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/lock_open.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\plus.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\plus.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/button_wh_normal.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/button_wh_normal.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_bl.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_bl.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_user.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_user.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\restaurant.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\restaurant.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_action_settings.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_action_settings.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_user.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_user.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ball_green.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ball_green.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\search_48.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\search_48.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ball_red.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ball_red.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector_linies.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_selector_linies.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\plus.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\plus.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_divider_wh.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_divider_wh.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\lock_open.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\lock_open.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\back.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\back.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ball_green.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ball_green.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\appico.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\appico.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\image2_bg.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\image2_bg.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_save.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_save.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_sorta.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_sorta.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\edittext_rounded_corners.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\edittext_rounded_corners.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\lock.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\lock.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\image2_bg.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\image2_bg.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_back.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_back.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\lock_open.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\lock_open.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/tick.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/tick.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\lock.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\lock.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/nuevo.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/nuevo.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_place.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_place.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_add.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_add.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/title_bar_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/title_bar_wh.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ball_red.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ball_red.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/boto_cercle.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/boto_cercle.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\title_bar_wh.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\title_bar_wh.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/add.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/add.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_left.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\arrow_left.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\podcast.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\podcast.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_end_call.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_end_call.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/checkmark.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/checkmark.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\image_bg.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\image_bg.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\satellite2.gif",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\satellite2.gif"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\taques.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\taques.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_add.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_add.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\delete.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\delete.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/record.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/record.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\podcast.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\podcast.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_event.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_event.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\save.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\save.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/icon.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/icon.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_launcher.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/lock.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/lock.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\help.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\help.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\white_container_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\white_container_wh.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\white_container_wh.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\white_container_wh.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/satellite.gif",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/satellite.gif"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\r96wbv06.bmp",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\r96wbv06.bmp"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_agenda.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_agenda.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\gray_gradient_background.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gray_gradient_background.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_launcher.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_launcher.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\tick.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\tick.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\delete.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\delete.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_star.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_star.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/users.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/users.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_settings.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_settings.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_bg.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient_bg.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\white_container_bl.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\white_container_bl.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/restaurant.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/restaurant.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_wh_normal.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_normal.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/toast.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/toast.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\user_icon.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\user_icon.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/hihgcopia.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/hihgcopia.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\run.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\run.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_bl_normal.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_bl_normal.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\add.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\add.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list_item_wh_selected.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list_item_wh_selected.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient2_bg.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient2_bg.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\nuevo.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\nuevo.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_wh.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_bl.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_bl.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\animated_button1.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\animated_button1.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_action_event.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_action_event.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_labels.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_labels.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_wh_pressed.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_pressed.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\satellite.gif",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\satellite.gif"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ball_red.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ball_red.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\satellite2.gif",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\satellite2.gif"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\users.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\users.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\hihgcopia.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\hihgcopia.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list_item_bl.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list_item_bl.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\icon.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\icon.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\boto_cercle.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\boto_cercle.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector_linies.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_selector_linies.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\phone.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable\\phone.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/button_bl_normal.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/button_bl_normal.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_end_call.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_end_call.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_end_call.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_end_call.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_delete.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_delete.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_bg.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient_bg.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/animated_button1.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/animated_button1.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/satellite2.gif",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/satellite2.gif"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_save.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_save.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/button_wh_selected.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/button_wh_selected.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/gradient_bg.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/gradient_bg.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_show_list.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_show_list.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\toast.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\toast.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\arrow_left.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\arrow_left.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/edittext_rounded_corners.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/edittext_rounded_corners.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list_selector_linies.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list_selector_linies.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\restaurant.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\restaurant.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\add.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\add.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\r96wbv06.bmp",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\r96wbv06.bmp"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\hihgcopia.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\hihgcopia.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_item_wh_selected.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_item_wh_selected.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\boto_cercle.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\boto_cercle.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/button_bl.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/button_bl.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/white_container_bl.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/white_container_bl.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_action_labels.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_action_labels.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/gradient2_bg.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/gradient2_bg.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/image_bg.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/image_bg.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/minus.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/minus.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_action_share.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_action_share.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_preferences.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_preferences.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/podcast.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/podcast.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/search_48.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/search_48.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_labels.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_labels.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/image2_bg.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/image2_bg.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\animated_button1.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\animated_button1.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/taques.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/taques.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/gradient_bg_hover.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/gradient_bg_hover.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\notes.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\notes.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_place.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_place.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/camera.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/camera.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\appico.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\appico.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/white_container_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/white_container_wh.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_action_place.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_action_place.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_preferences.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_preferences.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\phone.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\phone.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_wh_normal.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_normal.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\gray_gradient_background.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gray_gradient_background.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/nuevo2.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/nuevo2.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_save.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_save.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\button_wh_selected.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\button_wh_selected.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/run.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/run.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/appico.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/appico.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_compass.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_compass.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_share.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_action_share.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\tick.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\tick.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/help.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/help.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_agenda.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_agenda.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list_divider_bl.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list_divider_bl.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_drawer.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_drawer.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\list_selector.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\list_selector.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\taques.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\taques.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\search_48.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\search_48.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\calendar.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\calendar.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_compass.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_compass.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\save.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\save.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/phone.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/phone.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_menu_help.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_menu_help.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/notes.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/notes.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/arrow_left.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/arrow_left.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_show_list.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_show_list.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_help.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_help.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient2_bg.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient2_bg.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/calendar.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/calendar.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/save.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/save.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\gradient_bg_hover.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\gradient_bg_hover.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\ic_launcher.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_add.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_add.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\record.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\record.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/icono.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/icono.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\help.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\help.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/user_icon.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/user_icon.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable\\run.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable\\run.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/button_wh.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/button_wh.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/list_item_wh_pressed.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/list_item_wh_pressed.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable/ic_menu_delete.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable/ic_menu_delete.png"
     }
 ]

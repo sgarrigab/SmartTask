@@ -1,22 +1,42 @@
 [
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\save.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\save.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-ldpi/icon.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-ldpi/icon.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\users.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\users.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\icon.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\icon.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\nuevo.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\nuevo.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\users.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\users.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\calendar.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\calendar.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-ldpi/calendar.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-ldpi/calendar.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\icon.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\icon.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-ldpi/users.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-ldpi/users.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-ldpi/save.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-ldpi/save.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-ldpi/nuevo.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-ldpi/nuevo.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\calendar.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\calendar.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\nuevo.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\nuevo.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi\\save.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldpi\\save.png"
     }
 ]

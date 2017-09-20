@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\layout-land\\detail_form.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\layout-land\\detail_form.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\layout-land\\detail_form.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\layout-land\\detail_form.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/layout-land/detail_form.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/layout-land/detail_form.xml"
     }
 ]

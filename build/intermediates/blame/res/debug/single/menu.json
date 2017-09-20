@@ -1,10 +1,18 @@
 [
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\menu\\option.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\menu\\option.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/menu/option.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/menu/option.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\menu\\querymenu.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\menu\\querymenu.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\menu\\querymenu.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\menu\\querymenu.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\menu\\option.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\menu\\option.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/menu/querymenu.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/menu/querymenu.xml"
     }
 ]

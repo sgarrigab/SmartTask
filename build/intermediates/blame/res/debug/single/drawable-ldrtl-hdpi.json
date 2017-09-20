@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi\\ic_arrow_back_black_24dp.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldrtl-hdpi\\ic_arrow_back_black_24dp.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi\\ic_arrow_back_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-ldrtl-hdpi\\ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi/ic_arrow_back_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-ldrtl-hdpi/ic_arrow_back_black_24dp.png"
     }
 ]

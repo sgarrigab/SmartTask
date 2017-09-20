@@ -2,31 +2,76 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\gestions\Apps\SmartTask\libs\android-support-v4.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/julia/.android/build-cache/06a4c5fff9b5eb8a81e317d393ff37dab7838887/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.0"
-        sha1="a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf">
-        <dex dex="C:\gestions\Apps\SmartTask\build\intermediates\pre-dexed\debug\android-support-v4_38ade19b140671260d24ee1ab8a9b921366ade76.jar" />
+        revision="26.0.1"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0dd99d49252adbcd63cee41b0615d1d90ce4eda0/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\gestions\Apps\SmartTask\libs\javacsv.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/julia/StudioProjects/SmartTask/libs/javacsv.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.0"
+        revision="26.0.1"
         sha1="afed46cadd463453bbf007625ecfa3afac097f37">
-        <dex dex="C:\gestions\Apps\SmartTask\build\intermediates\pre-dexed\debug\javacsv_12586bb45d8ca7d3dedf6e020cd0e6dab3e22013.jar" />
+        <dex dex="/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/2/javacsv_07b1eb0828f16094ad066ab5bf6ba3146f484664/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\gestions\Apps\SmartTask\libs\ftp4j-1.6.1.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/home/julia/StudioProjects/SmartTask/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.0"
+        revision="26.0.1"
+        sha1="51965904e8c4fa426318e65d1fccb377af900d64">
+        <dex dex="/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5c182813fdef3043dd77e0920cb47d294f2ae3ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julia/StudioProjects/SmartTask/libs/ftp4j-1.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
         sha1="d44499aaf10c97c6b4039e8fdd3d4b10c5da73f9">
-        <dex dex="C:\gestions\Apps\SmartTask\build\intermediates\pre-dexed\debug\ftp4j-1.6.1_f79f27af6f9f43728fc94d22e6df2d4a543de541.jar" />
+        <dex dex="/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/2/ftp4j-1.6.1_9ac7b66ecbc6d671f33f4502cf10f028472657e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julia/StudioProjects/SmartTask/libs/android-support-v4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf">
+        <dex dex="/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/2/android-support-v4_877817adbf5aa874d7f1bb312528630e26a96645/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julia/StudioProjects/SmartTask/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_55bd771799e7e4c1d4a4ba4afe3bf1bd6b8a7a60/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julia/.android/build-cache/873c8239f8969c026aa9e3a5306b1a31e9f53c15/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7409d3710ed5d1e00751179497381a84a20acf7f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/julia/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_bfe233d63d73282fdeb03f323421a13007202940/classes.dex" />
     </item>
 
 </items>

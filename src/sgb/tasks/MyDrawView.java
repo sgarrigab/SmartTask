@@ -11,19 +11,25 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.ImageView;
 
-public class MyDrawView extends ImageView {
+import com.github.chrisbanes.photoview.PhotoView;
+
+public class MyDrawView extends PhotoView {
+
     public Bitmap  mBitmap;
     public Canvas  mCanvas;
     private Path    mPath;
     private Paint   mBitmapPaint;
     private Paint   mPaint;
+    private boolean touchable;
 
 
-    public MyDrawView(Context c, AttributeSet attrs) {
-        super(c, attrs);
-
+    public MyDrawView(Context context, AttributeSet attr) {
+        this(context, attr, 0);
         mPath = new Path();
+
         mBitmapPaint = new Paint(Paint.DITHER_FLAG);
+
+        touchable = false;
 
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
@@ -32,25 +38,50 @@ public class MyDrawView extends ImageView {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
-        mPaint.setStrokeWidth(9);
+        mPaint.setStrokeWidth(3);
+    }
 
+    public MyDrawView(Context context, AttributeSet attr, int defStyle) {
+        super(context, attr, defStyle);
+
+        mPath = new Path();
+
+        mBitmapPaint = new Paint(Paint.DITHER_FLAG);
+
+        touchable = false;
+
+        mPaint = new Paint();
+        mPaint.setAntiAlias(true);
+        mPaint.setDither(true);
+        mPaint.setColor(0xFF000000);
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeJoin(Paint.Join.ROUND);
+        mPaint.setStrokeCap(Paint.Cap.ROUND);
+        mPaint.setStrokeWidth(3);
     }
 
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        mBitmap = Bitmap.createBitmap(w, h, Config.ARGB_8888);
+
+        if (w <= 0 || h <= 0)
+            mBitmap = Bitmap.createBitmap(250, 250, Bitmap.Config.ARGB_8888);
+        else
+            mBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         mCanvas = new Canvas(mBitmap);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
-        canvas.drawBitmap(mBitmap, 0, 0, mBitmapPaint);
+        super.onDraw(canvas);
 
-        canvas.drawPath(mPath, mPaint);
+        if (touchable) {
 
+            canvas.drawBitmap(mBitmap, 0, 0, mBitmapPaint);
 
+            canvas.drawPath(mPath, mPaint);
+        }
     }
 
     private float mX, mY;
@@ -79,26 +110,36 @@ public class MyDrawView extends ImageView {
         mPath.reset();
     }
 
+    public void setTouchable(boolean touchable) {
+        this.touchable = touchable;
+    }
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        float x = event.getX();
-        float y = event.getY();
 
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-                touch_start(x, y);
-                invalidate();
-                break;
-            case MotionEvent.ACTION_MOVE:
-                touch_move(x, y);
-                invalidate();
-                break;
-            case MotionEvent.ACTION_UP:
-                touch_up();
-                invalidate();
-                break;
+        if (touchable) {
+
+            float x = event.getX();
+            float y = event.getY();
+
+            switch (event.getAction()) {
+                case MotionEvent.ACTION_DOWN:
+                    touch_start(x, y);
+                    invalidate();
+                    break;
+                case MotionEvent.ACTION_MOVE:
+                    touch_move(x, y);
+                    invalidate();
+                    break;
+                case MotionEvent.ACTION_UP:
+                    touch_up();
+                    invalidate();
+                    break;
+            }
+            return true;
         }
-        return true;
+
+        return false;
     }
 
     public Bitmap getBitmap()

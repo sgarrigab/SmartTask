@@ -1,4 +1,7 @@
-#Fri Sep 15 19:54:44 CEST 2017
-base.0=C\:\\gestions\\Apps\\SmartTask\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Wed Sep 20 17:08:16 CEST 2017
+base.0=/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_55bd771799e7e4c1d4a4ba4afe3bf1bd6b8a7a60
+renamed.1=classes2.dex
 renamed.0=classes.dex
-file.0=C\:\\gestions\\Apps\\SmartTask\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.1=/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5c182813fdef3043dd77e0920cb47d294f2ae3ac/classes.dex
+base.1=/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5c182813fdef3043dd77e0920cb47d294f2ae3ac
+file.0=/home/julia/StudioProjects/SmartTask/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_55bd771799e7e4c1d4a4ba4afe3bf1bd6b8a7a60/classes.dex

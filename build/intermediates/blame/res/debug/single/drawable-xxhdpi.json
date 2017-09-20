@@ -1,26 +1,50 @@
 [
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_chevron_right_black_24dp.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_chevron_right_black_24dp.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_forward_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_arrow_forward_black_24dp.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_forward_black_24dp.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_arrow_forward_black_24dp.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_chevron_right_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-xxhdpi/ic_chevron_right_black_24dp.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_keyboard_arrow_right_black_24dp.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_keyboard_arrow_right_black_24dp.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_chevron_left_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_chevron_left_black_24dp.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_chevron_left_black_24dp.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_chevron_left_black_24dp.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_back_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_arrow_back_black_24dp.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_keyboard_arrow_left_black_24dp.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_keyboard_arrow_left_black_24dp.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_keyboard_arrow_left_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_keyboard_arrow_left_black_24dp.png"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_arrow_back_black_24dp.png",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_arrow_back_black_24dp.png"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_arrow_forward_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-xxhdpi/ic_arrow_forward_black_24dp.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_keyboard_arrow_right_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-xxhdpi/ic_keyboard_arrow_right_black_24dp.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_arrow_back_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-xxhdpi/ic_arrow_back_black_24dp.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_keyboard_arrow_left_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-xxhdpi/ic_keyboard_arrow_left_black_24dp.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_keyboard_arrow_right_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_keyboard_arrow_right_black_24dp.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_chevron_right_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\drawable-xxhdpi\\ic_chevron_right_black_24dp.png"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_chevron_left_black_24dp.png",
+        "source": "/home/julia/StudioProjects/SmartTask/res/drawable-xxhdpi/ic_chevron_left_black_24dp.png"
     }
 ]

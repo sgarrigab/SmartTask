@@ -1,18 +1,34 @@
 [
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\anim\\flipin.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipin.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/anim/flipout_reverse.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/anim/flipout_reverse.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\anim\\flipout_reverse.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipout_reverse.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\anim\\flipout.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipout.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\anim\\flipin_reverse.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipin_reverse.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/anim/flipin.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/anim/flipin.xml"
     },
     {
-        "merged": "C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\anim\\flipout.xml",
-        "source": "C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipout.xml"
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\anim\\flipin_reverse.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipin_reverse.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/anim/flipout.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/anim/flipout.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\anim\\flipin.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipin.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/build/intermediates/res/merged/debug/anim/flipin_reverse.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/res/anim/flipin_reverse.xml"
+    },
+    {
+        "merged": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\build\\intermediates\\res\\merged\\debug\\anim\\flipout_reverse.xml",
+        "source": "/home/julia/StudioProjects/SmartTask/C:\\gestions\\Apps\\SmartTask\\res\\anim\\flipout_reverse.xml"
     }
 ]
